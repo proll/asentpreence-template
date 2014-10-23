@@ -1,0 +1,45 @@
+</div>
+  
+{squarespace-footers}
+
+<div class="menu">
+  <ul class="menu__list">
+    <li class="menu__group">
+      <squarespace:navigation navigationId="mainNav" template="navigation" />
+    </li>
+    <li class="menu__group">
+      <squarespace:navigation navigationId="secondaryNav" template="navigation" />
+    </li>
+  </ul>
+</div>
+
+<squarespace:script src="vendor/jquery/jquery.1.11.1.js" combo="true" />
+<squarespace:script src="vendor/lodash.js" combo="true" />
+<squarespace:script src="app.js" combo="true" />
+
+{.if template.mobileStylesEnabled}{.or}
+  <script>
+    Y.use('node', function() {
+      Y.on('domready', function() {
+        var move;
+        Y.all('.subnav a').each(function(a) {
+          a.on('touchstart', function() {
+            move = false;
+          });
+          a.on('touchmove', function() {
+            move = true;
+          });
+          a.on('touchend', function() {
+            if (move === false) {
+              window.location = a.getAttribute('href');
+            }
+          });
+        });
+      });
+    });
+  </script>
+{.end}
+  
+</body>
+</html>   
+

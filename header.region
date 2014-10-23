@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+{.if template.mobileStylesEnabled}
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{.end}
+{squarespace-headers}
+
+</head>
+<body class="body__page-about {squarespace.page-classes}">
+
+<header>
+  <a href="/" class="header__menu"><i class="i i-menu"></i></a>
+  <a href="/" class="header__logo"><i class="i i-logo"></i></a>
+</header>
+
+<div class="container" id="aspe-container">

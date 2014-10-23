@@ -110,7 +110,7 @@ $(function() {
 			my = (100*$mark.data('y')/ih).toPrecision(4);
 			$mark.css({
 				top:  mx + '%',
-				left: my + '%',
+				left: my + '%'
 			})
 		});
 	}

@@ -9,7 +9,7 @@
 {squarespace-headers}
 
 </head>
-<body id="{squarespace.page-id}" class="body__page-{squarespace.page-id} {squarespace.page-classes}">
+<body class="body__page-about {squarespace.page-classes}">
 
 <header>
   <a href="/" class="header__menu"><i class="i i-menu"></i></a>
@@ -17,64 +17,14 @@
 </header>
 
 <div class="container" id="aspe-container">
-  
-</div>
-
-
-  <div id="canvasWrapper" class="sqs-announcement-bar-dropzone">
-    <div id="canvas">
-    
-      <div id="headerWrapper">
+  <section class="about__section">
+    <div class="about__section-in">
+      <div class="about__cont">
+        {squarespace.main-content}
       </div>
-      
-      <div id="pageWrapper">
-      <section id="page">
-
-        <div id="mainContent" role="main" data-content-field="main-content">
-          <!-- CATEGORY NAV -->
-          {.section collection}{.equal? typeName "products"}{.section categories}
-          <div id="categoryNav">
-            <input type="checkbox" name="category-nav-toggle" id="categoryNavToggle" class="category-nav-toggle hidden" />
-            <label for="categoryNavToggle" class="category-nav-toggle-label" onclick></label>
-            <nav class="category-nav">
-              <ul class="category-nav-links">
-                <li class="filter"><a>Filter{.if categoryFilter}: {categoryFilter}{.end}</a></li>
-                <li{.if categoryFilter}{.or} class="active-link all"{.end}><a href="{fullUrl}">All</a></li>
-              {.repeated section @}
-                <li{.equal? categoryFilter @} class="active-link"{.end}><a href="{fullUrl}?category={@|url-encode}">{@}</a></li>
-              {.end}
-              </ul>
-            </nav>
-          </div>
-          {.end}{.end}{.end}
-          {squarespace.main-content}
-        </div>
-
-        {.section collection}
-        {.collectionTypeNameEquals? blog}
-        <aside id="sidebarWrapper">
-        <div id="sidebar">
-          <squarespace:block-field id="sidebarBlocks" label="Blog Sidebar Content" />
-        </div>
-        </aside>
-        {.end}
-        {.end}
-
-      </section>
-      </div>
-
-      <footer>
-        {.section website}
-          {.if socialAccounts}
-          <div id="sqs-footer-social" data-content-field="connected-accounts">
-            {.repeated section socialAccounts}<a{.if profileUrl} href="{profileUrl}" target="_blank"{.or} title="{screenname}"{.end} class="social-{serviceName}"></a>{.end}
-          </div>
-          {.end}
-        {.end}
-      </footer>
-          
     </div>
-  </div>
+  </section>
+</div>
   
 {squarespace-footers}
 

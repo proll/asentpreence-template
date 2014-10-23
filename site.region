@@ -1,71 +1,7 @@
-<!doctype html>
-<html>
-<head>
-
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-{.if template.mobileStylesEnabled}
-<meta name="viewport" content="width=device-width, initial-scale=1">
-{.end}
-{squarespace-headers}
-
-</head>
-<body class="body__page-about {squarespace.page-classes}">
-
-<header>
-  <a href="/" class="header__menu"><i class="i i-menu"></i></a>
-  <a href="/" class="header__logo"><i class="i i-logo"></i></a>
-</header>
-
-<div class="container" id="aspe-container">
-  <section class="about__section">
-    <div class="about__section-in">
-      <div class="about__cont">
-        {squarespace.main-content}
-      </div>
+<section class="about__section">
+  <div class="about__section-in">
+    <div class="about__cont">
+      {squarespace.main-content}
     </div>
-  </section>
-</div>
-  
-{squarespace-footers}
-
-<div class="menu">
-  <ul class="menu__list">
-    <li class="menu__group">
-      <squarespace:navigation navigationId="mainNav" template="navigation" />
-    </li>
-    <li class="menu__group">
-      <squarespace:navigation navigationId="secondaryNav" template="navigation" />
-    </li>
-  </ul>
-</div>
-
-<squarespace:script src="vendor/jquery/jquery.1.11.1.js" combo="true" />
-<squarespace:script src="vendor/lodash.js" combo="true" />
-<squarespace:script src="app.js" combo="true" />
-
-{.if template.mobileStylesEnabled}{.or}
-  <script>
-    Y.use('node', function() {
-      Y.on('domready', function() {
-        var move;
-        Y.all('.subnav a').each(function(a) {
-          a.on('touchstart', function() {
-            move = false;
-          });
-          a.on('touchmove', function() {
-            move = true;
-          });
-          a.on('touchend', function() {
-            if (move === false) {
-              window.location = a.getAttribute('href');
-            }
-          });
-        });
-      });
-    });
-  </script>
-{.end}
-  
-</body>
-</html>   
-
+  </div>
+</section>

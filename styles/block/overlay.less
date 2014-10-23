@@ -1,0 +1,117 @@
+.overlay-visible {
+	overflow: hidden;
+	.overlay {
+		display: block;
+	}
+}
+
+.overlay {
+	background: @white;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 10;
+	display: none;
+}
+
+	.overlay__close {
+		display: block;
+		position: absolute;
+		top: 0;
+		right: 0;
+		padding: 20px;
+		font-size: 0;
+		line-height: 0;
+		z-index: 2;
+	}
+
+	.overlay__prev {
+		position: absolute;
+		top: 50%;
+		margin-top: -98px/2;
+		padding: 0 20px;
+		left: 0;
+		font-size: 0;
+		line-height: 0;
+		z-index: 2;
+	}
+
+	.overlay__next {
+		position: absolute;
+		top: 50%;
+		margin-top: -98px/2;
+		padding: 0 20px;
+		right: 0;
+		font-size: 0;
+		line-height: 0;
+		z-index: 2;
+	}
+
+	.overlay__slides-cont {
+		overflow: hidden;
+		position: relative;
+		.box-sizing(border-box);
+		padding: 0;
+		height: 100%;
+	}
+		.overlay__slides {
+			font-size: 0;
+			line-height: 0;
+			.transition(all .3s);
+			overflow: hidden;
+			position: relative;
+			height: 100%;
+		}
+
+			.overlay__slide {
+				float: left;
+				width: 100%;
+				height: 100%;
+				position: relative;
+				vertical-align: top;
+				min-height: 100px;
+				text-align: center;
+				background-position: 50% 50%;
+				background-repeat: no-repeat;
+
+				background-image: url(/images/st/product-part.jpg);
+				.background-size(auto 100%);
+
+				color: @black;
+
+				h2 {
+					font-size: 18px;
+					line-height: 2;
+					font-weight: normal;
+					margin: 0;
+					padding: 109px+40px 40px 0;
+				}
+
+				.overlay__desc {
+					position: absolute;
+					bottom: 80px-3px;
+					left: 40px;
+					right: 40px;
+				}
+
+					h3 {
+						font-size: 14px;
+						line-height: 24px;
+						font-weight: normal;
+						margin: 0 0 15px;
+					}
+
+					p {
+						font-size: 11px;
+						line-height: 14px;
+						font-family: 'Courier New', Courier, sans;
+						margin: 0;
+					}
+
+						strong {
+							font-weight: normal;
+							text-transform: uppercase;
+						}
+			}

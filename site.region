@@ -8,16 +8,20 @@
 {.end}
 {squarespace-headers}
 
-
-<squarespace:script src="site.js" combo="true" />
-
 </head>
-<body id="{squarespace.page-id}" class="{squarespace.page-classes}{.section website}{.section logoImageUrl} logo-image{.or} site-title{.end}{.end}">
+<body id="{squarespace.page-id}" class="body__page-{squarespace.page-id} {squarespace.page-classes}">
 
-  <div id="mobileNav"><div class="wrapper">
-    <squarespace:navigation navigationId="mainNav" template="mobile-navigation" />
-    <squarespace:navigation navigationId="secondaryNav" template="mobile-navigation" />
-  </div></div>
+
+<div class="menu">
+  <ul class="menu__list">
+    <li class="menu__group">
+      <squarespace:navigation navigationId="mainNav" template="navigation" />
+    </li>
+    <li class="menu__group">
+      <squarespace:navigation navigationId="secondaryNav" template="navigation" />
+    </li>
+  </ul>
+</div>
 
   <div id="canvasWrapper" class="sqs-announcement-bar-dropzone">
     <div id="canvas">
@@ -106,6 +110,11 @@
   </div>
   
 {squarespace-footers}
+
+
+<squarespace:script src="vendor/jquery/jquery.1.11.1.js" combo="true" />
+<squarespace:script src="vendor/lodash.js" combo="true" />
+<squarespace:script src="app.js" combo="true" />
 
 {.if template.mobileStylesEnabled}{.or}
   <script>

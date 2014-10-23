@@ -9,7 +9,7 @@
       {.repeated section items}
         {.collection?}
           <li class="menu__item">
-            <a href="{fullUrl}" class="menu__item-a">{navigationTitle}</a>
+            <a href="{collection.fullUrl}" class="menu__item-a">{collection.navigationTitle}</a>
           </li>
         {.end}
 
@@ -20,7 +20,7 @@
         {.end}
       {.end}
     {.or}
-    
+
       <li class="menu__item">
 
         {.section collection}

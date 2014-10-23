@@ -11,53 +11,16 @@
 </head>
 <body id="{squarespace.page-id}" class="body__page-{squarespace.page-id} {squarespace.page-classes}">
 
+<header>
+  <a href="/" class="header__menu"><i class="i i-menu"></i></a>
+  <a href="/" class="header__logo"><i class="i i-logo"></i></a>
+</header>
 
-<div class="menu">
-  <ul class="menu__list">
-    <li class="menu__group">
-      <squarespace:navigation navigationId="mainNav" template="navigation" />
-    </li>
-    <li class="menu__group">
-      <squarespace:navigation navigationId="secondaryNav" template="navigation" />
-    </li>
-  </ul>
-</div>
 
   <div id="canvasWrapper" class="sqs-announcement-bar-dropzone">
     <div id="canvas">
     
       <div id="headerWrapper">
-      <header id="header">
-      
-        <div id="logo" data-content-field="site-title">
-          {.section website}
-            <h1 class="logo">
-              <a href="/">
-                {.if logoImageUrl}
-                  <img src="{logoImageUrl}?format=1000w" alt="{siteTitle}" />
-                {.or}
-                  {siteTitle}
-                {.end}
-              </a>
-            </h1>
-          {.end}
-        </div>
-        
-        <div id="topNav">
-          <squarespace:navigation navigationId="mainNav" template="navigation" />
-          <squarespace:navigation navigationId="secondaryNav" template="secondaryNavigation" />
-          <nav id="mobileMenuLink" class="main-nav clear"><ul><li class="active-link"><a>Menu</a></li></ul></nav>
-        </div>
-        
-        {.section website}
-          {.if socialAccounts}
-          <div id="sqs-header-social" data-content-field="connected-accounts">
-            {.repeated section socialAccounts}<a{.if profileUrl} href="{profileUrl}" target="_blank"{.or} title="{screenname}"{.end} class="social-{serviceName}"></a>{.end}
-          </div>
-          {.end}
-        {.end}
-
-      </header>
       </div>
       
       <div id="pageWrapper">
@@ -111,6 +74,16 @@
   
 {squarespace-footers}
 
+<div class="menu">
+  <ul class="menu__list">
+    <li class="menu__group">
+      <squarespace:navigation navigationId="mainNav" template="navigation" />
+    </li>
+    <li class="menu__group">
+      <squarespace:navigation navigationId="secondaryNav" template="navigation" />
+    </li>
+  </ul>
+</div>
 
 <squarespace:script src="vendor/jquery/jquery.1.11.1.js" combo="true" />
 <squarespace:script src="vendor/lodash.js" combo="true" />

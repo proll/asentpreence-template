@@ -1,0 +1,61 @@
+{
+  "name": "i-2x",
+  "checksum": "629c847dab3862f389c7f1a2fcaf33e8",
+  "shortsum": "629c8",
+  "images": [
+    {
+      "name": "al",
+      "filename": "al.png",
+      "checksum": "a68dd4e1a4fb44a24cd5f3ececacdfec",
+      "width": 104,
+      "height": 196,
+      "positionX": 0,
+      "positionY": 0
+    },
+    {
+      "name": "ar",
+      "filename": "ar.png",
+      "checksum": "022223a2e16bfe1e5c645c99e80a8018",
+      "width": 104,
+      "height": 196,
+      "positionX": 0,
+      "positionY": 198
+    },
+    {
+      "name": "close",
+      "filename": "close.png",
+      "checksum": "2d377b854944242d737019dddb010829",
+      "width": 128,
+      "height": 128,
+      "positionX": 0,
+      "positionY": 396
+    },
+    {
+      "name": "logo",
+      "filename": "logo.png",
+      "checksum": "997e2f16df8c3cf406953865de81841e",
+      "width": 505,
+      "height": 112,
+      "positionX": 0,
+      "positionY": 526
+    },
+    {
+      "name": "menu",
+      "filename": "menu.png",
+      "checksum": "e4cd2d6a5c8dfaecaa37634451dbbfea",
+      "width": 121,
+      "height": 113,
+      "positionX": 0,
+      "positionY": 640
+    },
+    {
+      "name": "plus",
+      "filename": "plus.png",
+      "checksum": "8dd2c064300907e7551dad7169270805",
+      "width": 96,
+      "height": 96,
+      "positionX": 0,
+      "positionY": 755
+    }
+  ]
+}

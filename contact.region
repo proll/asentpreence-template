@@ -13,6 +13,7 @@
       <button class="contact__submit" type="submit">Submit</button>
       <a class="contact__submit-a">Submit</a>
     </form>
+    {squarespace.main-content}
 
     <div class="contact__row">
       Follow the story and product updates:

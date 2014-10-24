@@ -758,8 +758,7 @@ header {
 }
 .contact__section-in .col > .sqs-block-markdown > .sqs-block-content a,
 .contact__section-in .col > .sqs-block-markdown > .sqs-block-content a:hover {
-  margin-left: .5em;
-  display: inline-block;
+  margin-left: 1em;
   text-transform: none;
   text-decoration: none;
   color: #ffffff;

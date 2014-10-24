@@ -840,6 +840,7 @@ header {
   font-size: 14px;
 }
 .contact__social a {
+  color: #ffffff;
   -webkit-transition: border-color 0.2s;
   -moz-transition: border-color 0.2s;
   -o-transition: border-color 0.2s;
@@ -847,6 +848,7 @@ header {
   border-bottom: 1px solid transparent;
 }
 .contact__social a:hover {
+  color: #ffffff;
   border-bottom: 1px solid #ffffff;
 }
 .body__page-about .sqs-layout > .sqs-row {

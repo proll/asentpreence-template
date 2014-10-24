@@ -1,0 +1,34 @@
+<section class="about__section">
+  <div class="about__section-in">
+    <div class="about__cont">
+      {squarespace.main-content}
+    </div>
+  </div>
+</section>
+
+<section class="contact__section">
+  <div class="contact__section-in">
+    <div class="contact__row">
+      <span class="contact__h">For sales inquiries, please contact</span><a href="mailto:sales@asentpreence.com">sales@asentpreence.com</a>
+    </div>
+    <div class="contact__row">
+      <span class="contact__h">For press / Sample requests</span><a href="mailto:press@asentpreence.com">press@asentpreence.com</a>
+    </div>
+
+    <form class="contact__form">
+      <input type="text" class="contact__inp" placeholdertext="Enter your email address for news and exclusive offers" placeholder="Enter your email address for news and exclusive offers">
+      <input type="text" class="contact__inp contact__inp_phone" placeholdertext="Subscribe to our Newsletter" placeholder="Subscribe to our Newsletter">
+      <button class="contact__submit" type="submit">Submit</button>
+      <a class="contact__submit-a">Submit</a>
+    </form>
+
+    <div class="contact__row">
+      Follow the story and product updates:
+    </div>
+    <div class="contact__row">
+      <span class="contact__social">
+      <squarespace:navigation navigationId="socialNav" template="social-navigation" />
+      </span>
+    </div>
+  </div>
+</section>

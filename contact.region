@@ -1,11 +1,6 @@
 <section class="contact__section">
   <div class="contact__section-in">
-    <div class="contact__row">
-      <span class="contact__h">For sales inquiries, please contact</span><a href="mailto:sales@asentpreence.com">sales@asentpreence.com</a>
-    </div>
-    <div class="contact__row">
-      <span class="contact__h">For press / Sample requests</span><a href="mailto:press@asentpreence.com">press@asentpreence.com</a>
-    </div>
+    {squarespace.main-content}
 
     <form class="contact__form">
       <input type="text" class="contact__inp" placeholdertext="Enter your email address for news and exclusive offers" placeholder="Enter your email address for news and exclusive offers">
@@ -13,7 +8,6 @@
       <button class="contact__submit" type="submit">Submit</button>
       <a class="contact__submit-a">Submit</a>
     </form>
-    {squarespace.main-content}
 
     <div class="contact__row">
       Follow the story and product updates:

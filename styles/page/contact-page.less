@@ -22,8 +22,10 @@
 
 	.col {
 		&>.sqs-block-markdown {
-			&>.sqs-block-content {
+			&:first-child{
 				text-transform: uppercase;
+			}
+			&>.sqs-block-content {
 				p {
 					margin: 0;
 					padding: 0;

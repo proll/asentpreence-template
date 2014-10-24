@@ -749,7 +749,7 @@ header {
   display: table-cell;
   vertical-align: middle;
 }
-.contact__section-in .col > .sqs-block-markdown > .sqs-block-content {
+.contact__section-in .col > .sqs-block-markdown:first-child {
   text-transform: uppercase;
 }
 .contact__section-in .col > .sqs-block-markdown > .sqs-block-content p {

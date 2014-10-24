@@ -18,23 +18,31 @@
 .contact__section-in {
 	display: table-cell;
 	vertical-align: middle;
-}
 
-	.contact__row {
-		a,
-		a:hover
-		 {
-		 	text-decoration: none;
-			color: @white;
-			border-bottom: 1px solid @white;
+	.sqs-block-markdown {
+		.sqs-block-content {
+			text-transform: uppercase;
+			margin-right: 22px;
+			p {
+				margin: 0;
+				padding: 0;
+			}
+				a,
+				a:hover
+				 {
+				 	text-transform: none;
+				 	text-decoration: none;
+					color: @white;
+					border-bottom: 1px solid @white;
+				}
 		}
 	}
-		.contact__h {
-			text-transform: uppercase;
-			display: inline-block;
-			margin-right: 22px;
+}
+	// .contact__row {
+	// }
+	// 	.contact__h {
 
-		}
+	// 	}
 
 	.contact__form {
 		display: block;

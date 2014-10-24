@@ -749,16 +749,20 @@ header {
   display: table-cell;
   vertical-align: middle;
 }
-.contact__row a,
-.contact__row a:hover {
+.contact__section-in .sqs-block-markdown .sqs-block-content {
+  text-transform: uppercase;
+  margin-right: 22px;
+}
+.contact__section-in .sqs-block-markdown .sqs-block-content p {
+  margin: 0;
+  padding: 0;
+}
+.contact__section-in .sqs-block-markdown .sqs-block-content a,
+.contact__section-in .sqs-block-markdown .sqs-block-content a:hover {
+  text-transform: none;
   text-decoration: none;
   color: #ffffff;
   border-bottom: 1px solid #ffffff;
-}
-.contact__h {
-  text-transform: uppercase;
-  display: inline-block;
-  margin-right: 22px;
 }
 .contact__form {
   display: block;

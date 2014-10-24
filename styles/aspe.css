@@ -749,16 +749,17 @@ header {
   display: table-cell;
   vertical-align: middle;
 }
-.contact__section-in .sqs-block-markdown .sqs-block-content {
+.contact__section-in .col > .sqs-block-markdown > .sqs-block-content {
   text-transform: uppercase;
-  margin-right: 22px;
 }
-.contact__section-in .sqs-block-markdown .sqs-block-content p {
+.contact__section-in .col > .sqs-block-markdown > .sqs-block-content p {
   margin: 0;
   padding: 0;
 }
-.contact__section-in .sqs-block-markdown .sqs-block-content a,
-.contact__section-in .sqs-block-markdown .sqs-block-content a:hover {
+.contact__section-in .col > .sqs-block-markdown > .sqs-block-content a,
+.contact__section-in .col > .sqs-block-markdown > .sqs-block-content a:hover {
+  margin-left: .5em;
+  display: inline-block;
   text-transform: none;
   text-decoration: none;
   color: #ffffff;

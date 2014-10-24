@@ -19,22 +19,27 @@
 	display: table-cell;
 	vertical-align: middle;
 
-	.sqs-block-markdown {
-		.sqs-block-content {
-			text-transform: uppercase;
-			margin-right: 22px;
-			p {
-				margin: 0;
-				padding: 0;
-			}
+
+	.col {
+		&>.sqs-block-markdown {
+			&>.sqs-block-content {
+				text-transform: uppercase;
+				p {
+					margin: 0;
+					padding: 0;
+				}
 				a,
 				a:hover
 				 {
+				 	color: @white;
+					margin-left: .5em;
+					display: inline-block;
 				 	text-transform: none;
 				 	text-decoration: none;
 					color: @white;
 					border-bottom: 1px solid @white;
 				}
+			}
 		}
 	}
 }

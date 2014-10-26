@@ -5,10 +5,11 @@
 			<div class="overlay__slide">
 				{.section title}
 				<h2>{@}</h2>
-				{.end}		
+				{.end}
 				<span class="overlay__desc">
-					<h3>Flat top ring is crafted from sterling silver. Available in silver and gold satin finish</h3>
-					<p><strong>Composition:</strong> 925 silver, 18kt gold plate, 6 milky quartzes</p>
+					{.section description}<h3>{@}</h3>{.end}
+					{.section excerpt}<p><strong>Composition:</strong> {@}</p>{.end}
+
 				</span>
 			</div>
 			{.end}

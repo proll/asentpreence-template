@@ -566,7 +566,6 @@ header {
 }
 .overlay__slide .overlay__desc-misc p,
 .overlay__slide .overlay__desc-misc div {
-  display: inline;
   padding: 0;
   margin: 0;
 }

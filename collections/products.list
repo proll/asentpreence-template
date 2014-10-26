@@ -8,7 +8,7 @@
 				{.end}
 				<span class="overlay__desc">
 					{.section excerpt}<h3 class="overlay__desc-h">{@}</h3>{.end}
-					{.section body}<span class="overlay__desc-misc"><strong>Composition:</strong> {@}</span>{.end}
+					{.section body}<span class="overlay__desc-misc">{@}</span>{.end}
 
 				</span>
 			</div>

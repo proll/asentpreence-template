@@ -759,6 +759,7 @@ header {
 }
 .body__page-contact .form-block .form-item.error .field-element {
   border: 0 none !important;
+  border-bottom: 1px solid #ffffff !important;
 }
 .body__page-contact .form-block .form-item .title {
   display: none;

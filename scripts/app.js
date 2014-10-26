@@ -33,9 +33,10 @@ $(function() {
 	// consol
 	$('.field-element[name=email]')
 		.on('touchstart click focus', function(e) {
-			var $edit = $(e.currentTarget);
+			var $edit = $(e.currentTarget),
+				txt = $edit.attr('placeholder');
 			$edit
-				.data('placeholder', $edit.attr('placeholder'))
+				.data('placeholder', txt)
 				.attr('placeholder', '');
 			return true;
 		})

@@ -31,18 +31,20 @@ $(function() {
 
 	// contact - edits
 	// consol
-	$('.field-element[name=email]').on('touchstart click focus', function(e) {
-		var $edit = $(e.currentTarget);
-		$edit.data('placeholder', $edit.attr('placeholder'));
-		$edit.attr('placeholder', '');
-		return true;
-	})
-	$('.field-element[name=email]').on('blur', function(e) {
-		var $edit = $(e.currentTarget),
-			placeholder_text = $edit.data('placeholder');
-		$edit.attr('placeholder', placeholder_text);
-		return true;
-	})
+	$('.field-element[name=email]')
+		.on('touchstart click focus', function(e) {
+			var $edit = $(e.currentTarget);
+			$edit
+				.data('placeholder', $edit.attr('placeholder'))
+				.attr('placeholder', '');
+			return true;
+		})
+		.on('blur', function(e) {
+			var $edit = $(e.currentTarget),
+				placeholder_text = $edit.data('placeholder');
+			$edit.attr('placeholder', placeholder_text);
+			return true;
+		})
 
 	var $collections,
 		$collection,

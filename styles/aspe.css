@@ -694,6 +694,11 @@ header {
   top: -99997px;
   left: -99997px;
 }
+.home__section-h p {
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
 .home__section-a {
   position: absolute;
   left: 0;

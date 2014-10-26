@@ -1,40 +1,53 @@
-<ul class="menu__group-list">
-  {.repeated section items}
+<div class="menu">
+  <ul class="menu__list">
+    <li class="menu__group">
+      <ul class="menu__group-list">
+        {.repeated section items}
 
-    {.folder?}
-      <li class="menu__item">
-        <h2>{collection.navigationTitle}</h2>
-      </li>
+          {.folder?}
+            <li class="menu__item">
+              <h2>{collection.navigationTitle}</h2>
+            </li>
 
-      {.repeated section items}
-        {.collection?}
-          <li class="menu__item">
-            <a href="{collection.fullUrl}" class="menu__item-a">{collection.navigationTitle}</a>
-          </li>
+            {.repeated section items}
+              {.collection?}
+                <li class="menu__item">
+                  <a href="{collection.fullUrl}" class="menu__item-a">{collection.navigationTitle}</a>
+                </li>
+              {.end}
+
+              {.section externalLink}
+                <li class="menu__item">
+                  <a href="{url}" class="menu__item-a"{.section newWindow} target="_blank"{.end}>{title}</a>
+                </li>
+              {.end}
+            {.end}
+          {.end}
         {.end}
+      </ul>
+    </li>
+    <li class="menu__group">
+      <ul class="menu__group-list">
+        {.repeated section items}
+          {.folder?}
+          {.or}
+            <li class="menu__item">
 
-        {.section externalLink}
-          <li class="menu__item">
-            <a href="{url}" class="menu__item-a"{.section newWindow} target="_blank"{.end}>{title}</a>
-          </li>
+              {.section collection}
+                <a href="{fullUrl}" class="menu__item-a">{navigationTitle}</a>
+              {.end}
+
+              {.section externalLink}
+                <a href="{url}" class="menu__item-a"{.section newWindow} target="_blank"{.end}>{title}</a>
+              {.end}
+
+            </li>
+          {.end}
         {.end}
-      {.end}
-    {.end}
-  {.end}
-</ul>
-<ul class="menu__group-list">
-  {.repeated section items}
-      <li class="menu__item">
+      </ul>
+    </li>
+  </ul>
+</div>
 
-        {.section collection}
-          <a href="{fullUrl}" class="menu__item-a">{navigationTitle}</a>
-        {.end}
 
-        {.section externalLink}
-          <a href="{url}" class="menu__item-a"{.section newWindow} target="_blank"{.end}>{title}</a>
-        {.end}
 
-      </li>
-    {.end}
-  {.end}
-</ul>

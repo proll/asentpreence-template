@@ -2,16 +2,7 @@
   
 {squarespace-footers}
 
-<div class="menu">
-  <ul class="menu__list">
-    <li class="menu__group">
-      <squarespace:navigation navigationId="mainNav" template="navigation" />
-    </li>
-    <li class="menu__group">
-      <squarespace:navigation navigationId="secondaryNav" template="navigation" />
-    </li>
-  </ul>
-</div>
+<squarespace:navigation navigationId="mainNav" template="navigation" />
 
 <squarespace:script src="vendor/jquery/jquery.1.11.1.js" combo="true" />
 <squarespace:script src="vendor/lodash.js" combo="true" />

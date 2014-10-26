@@ -31,14 +31,15 @@ $(function() {
 
 	// contact - edits
 	// consol
-	$('.contact__inp').on('touchstart click focus', function(e) {
+	$('.field-element[name=email]').on('touchstart click focus', function(e) {
 		var $edit = $(e.currentTarget);
+		$edit.data('placeholder', $edit.attr('placeholder'));
 		$edit.attr('placeholder', '');
 		return true;
 	})
-	$('.contact__edit').on('blur', function(e) {
+	$('.field-element[name=email]').on('blur', function(e) {
 		var $edit = $(e.currentTarget),
-			placeholder_text = $edit.attr('placeholdertext');
+			placeholder_text = $edit.data('placeholder');
 		$edit.attr('placeholder', placeholder_text);
 		return true;
 	})
@@ -122,5 +123,7 @@ $(function() {
 		// $window.on('resize', _.throttle(_.bind(positionMark, this), 500));
 
 	}
+
+	if()
 
 })

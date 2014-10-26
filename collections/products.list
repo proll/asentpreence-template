@@ -1,0 +1,20 @@
+<div class="overlay">
+	<div class="overlay__slides-cont">
+		<div class="overlay__slides">
+			{.repeated section items}
+			<div class="overlay__slide">
+				{.section title}
+				<h2>{@}</h2>
+				{.end}		
+				<span class="overlay__desc">
+					<h3>Flat top ring is crafted from sterling silver. Available in silver and gold satin finish</h3>
+					<p><strong>Composition:</strong> 925 silver, 18kt gold plate, 6 milky quartzes</p>
+				</span>
+			</div>
+			{.end}
+		</div>
+	</div>
+	<a href="close" class="overlay__close"><i class="i i-close"></i></a>
+	<a href="prev" class="overlay__prev"><i class="i i-al"></i></a>
+	<a href="next" class="overlay__next"><i class="i i-ar"></i></a>
+</div>

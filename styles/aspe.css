@@ -834,6 +834,11 @@ header {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: transparent;
+  padding: 0 21px;
+  overflow: visible;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 .body__page-contact .form-block .form-button-wrapper .button:hover {
   color: #ffffff;

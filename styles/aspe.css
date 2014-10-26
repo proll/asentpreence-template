@@ -718,17 +718,11 @@ header {
 .home__section-a:hover span {
   border-bottom: 1px solid #ffffff;
 }
-.home__section1 {
-  background-image: url(/images/st/wc.png);
+.home__section:first-child .home__section-h {
+  background-image: url(/assets/st/collection1.png);
 }
-.home__section1 .home__section-h {
-  background-image: url(/images/st/collection1.png);
-}
-.home__section2 {
-  background-image: url(/images/st/mc.png);
-}
-.home__section2 .home__section-h {
-  background-image: url(/images/st/collection2.png);
+.home__section2:nth-child(n+1) .home__section-h {
+  background-image: url(/assets/st/collection2.png);
 }
 .body__page-contact .container {
   height: 100%;

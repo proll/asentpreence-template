@@ -757,6 +757,9 @@ header {
   display: inline-block;
   vertical-align: top;
 }
+.body__page-contact .form-block .form-item.error .field-element {
+  border: 0 none !important;
+}
 .body__page-contact .form-block .form-item .title {
   display: none;
 }
@@ -780,6 +783,9 @@ header {
   vertical-align: middle;
   height: 18px;
   width: 340px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
   text-align: center;
   -webkit-font-smoothing: antialiased;
 }
@@ -799,6 +805,9 @@ header {
   color: #ffffff;
 }
 -moz-osx-font-smoothing:grayscale .body__page-contact .form-block .form-item .field-element:focus {
+  background: transparent;
+}
+.body__page-contact .form-block .form-item .field-element:focus {
   background: transparent;
 }
 .body__page-contact .form-block .form-button-wrapper {
@@ -881,6 +890,9 @@ header {
   vertical-align: middle;
   height: 18px;
   width: 340px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
   text-align: center;
   -webkit-font-smoothing: antialiased;
 }

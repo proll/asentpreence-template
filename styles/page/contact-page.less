@@ -28,12 +28,21 @@
 				display: inline-block;
 				vertical-align: top;
 
+				&.error {
+					.field-element {
+						border: 0 none !important;
+					}					
+				}
+
 				.title {
 					display: none;
 				}
 
 				.field-element {
 					.contact__inp;
+					&:focus {
+						background: transparent;
+					}
 				}
 
 			}
@@ -115,6 +124,7 @@
 			vertical-align: middle;
 			height: 18px;
 			width: 340px;
+			.border-radius(0);
 
 			.placeholder(@white);
 			text-align: center;

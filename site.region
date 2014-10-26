@@ -1,7 +1,1 @@
-<section class="about__section">
-  <div class="about__section-in">
-    <div class="about__cont">
-      {squarespace.main-content}
-    </div>
-  </div>
-</section>
+{squarespace.main-content}

@@ -1,0 +1,29 @@
+<div id="galleryWrapper">
+
+  <div id="slideshowWrapper">
+    <div id="slideshow">
+      {.repeated section items}
+        {.if clickthroughUrl}<a href="{clickthroughUrl}" {.or}<div {.end}class="slide" data-slide-id="{id}" data-slide-url="{urlId}">
+          {@|image load-false}
+        {.if clickthroughUrl}</a>{.or}</div>{.end}
+      {.end}
+    </div>
+    <div class="gallery-controls">
+      <span class="gallery-prev"><span>Prev</span></span><span class="gallery-divider"></span><span class="gallery-next"><span>Next</span></span>
+    </div>
+  </div>
+
+  <div id="imageData">
+    {.repeated section items}
+    <div class="slide">
+      {.section title}<div class="image-title"><strong>{@}</strong></div>{.end}
+      {.section body}<span class="image-desc">{@}</span>{.end}
+      </div>
+    {.end}
+  </div>
+
+  <!-- <div id="simpleControls">
+      <span class="wrapper"><span class="control prev-slide">prev</span> / <span class="control next-slide">next</span></span>
+  </div> -->
+
+</div>

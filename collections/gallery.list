@@ -2,9 +2,7 @@
   <ul class="collection__grid">
     {.repeated section items}
     <li class="collection__grid-itm">
-      {.section body}
-      <img src="{@}" alt="" class="collection__grid-itm-img">
-      {.end}
+      <img src="{assetUrl}" alt="{.section title}{@}{.end}" class="collection__grid-itm-img">
     </li>
     {.end}
   </ul>

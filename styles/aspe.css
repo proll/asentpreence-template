@@ -752,6 +752,7 @@ header {
 }
 .body__page-contact .form-block .field-list {
   display: inline-block;
+  vertical-align: middle;
 }
 .body__page-contact .form-block .field-list .field-error {
   display: block;

@@ -123,7 +123,4 @@ $(function() {
 		// $window.on('resize', _.throttle(_.bind(positionMark, this), 500));
 
 	}
-
-	if()
-
 })

@@ -760,6 +760,7 @@ header {
   padding: 0;
   display: inline-block;
   vertical-align: top;
+  margin: 0;
 }
 .body__page-contact .form-block .form-item.error .field-element {
   border: 0 none !important;

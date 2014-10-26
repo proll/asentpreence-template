@@ -712,6 +712,7 @@ header {
   transition: border-color 0.2s;
 }
 .home__section-a span p {
+  text-transform: lowercase;
   margin: 0;
   padding: 0;
   display: inline;

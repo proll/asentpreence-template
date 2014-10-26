@@ -1106,7 +1106,7 @@ header {
   color: #ffffff;
 }
 .stockists__itm {
-  margin-bottom: 45px;
+  margin-bottom: 45px !important;
 }
 .error-page__list,
 .error-page__description {

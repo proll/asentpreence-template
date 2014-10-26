@@ -762,7 +762,7 @@ header {
 .body__page-contact .form-block .form-item {
   padding: 0;
   display: inline-block;
-  vertical-align: top;
+  vertical-align: middle;
   margin: 0;
 }
 .body__page-contact .form-block .form-item.error .field-element {
@@ -822,7 +822,7 @@ header {
 }
 .body__page-contact .form-block .form-button-wrapper {
   display: inline-block;
-  vertical-align: top;
+  vertical-align: middle;
 }
 .body__page-contact .form-block .form-button-wrapper .button {
   padding: 0;

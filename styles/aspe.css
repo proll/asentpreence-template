@@ -790,6 +790,9 @@ header {
 .body__page-contact .form-block .form-item .field-element::-webkit-input-placeholder {
   color: #ffffff;
 }
+.body__page-contact .form-block .form-item .field-element:focus {
+  background: transparent;
+}
 .body__page-contact .form-block .form-button-wrapper {
   display: inline-block;
   vertical-align: top;
@@ -813,9 +816,6 @@ header {
 .body__page-contact .form-block .form-button-wrapper .button:hover {
   color: #ffffff;
   text-decoration: none;
-}
-.body__page-contact .form-block .form-button-wrapper .button:focus {
-  background: transparent;
 }
 .contact__section {
   display: table;

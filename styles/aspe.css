@@ -746,6 +746,7 @@ header {
 .body__page-contact .form-block .form-item {
   padding: 0;
   display: inline-block;
+  vertical-align: top;
 }
 .body__page-contact .form-block .form-item .title {
   display: none;
@@ -791,6 +792,7 @@ header {
 }
 .body__page-contact .form-block .form-button-wrapper {
   display: inline-block;
+  vertical-align: top;
 }
 .body__page-contact .form-block .form-button-wrapper .button {
   padding: 0;
@@ -806,6 +808,7 @@ header {
   cursor: pointer;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: transparent;
 }
 .body__page-contact .form-block .form-button-wrapper .button:hover {
   color: #ffffff;

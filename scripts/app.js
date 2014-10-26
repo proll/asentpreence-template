@@ -35,9 +35,11 @@ $(function() {
 		.on('focus', function(e) {
 			var $edit = $(e.currentTarget),
 				txt = $edit.attr('placeholder');
-			$edit
-				.data('placeholder', txt)
-				.attr('placeholder', '');
+			if(!!txt) {
+				$edit
+					.data('placeholder', txt)
+					.attr('placeholder', '');
+			}
 			return true;
 		})
 		.on('blur', function(e) {

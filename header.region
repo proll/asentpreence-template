@@ -9,7 +9,7 @@
 {squarespace-headers}
 
 </head>
-<body class="body__page-about {squarespace.page-classes}">
+<body class="body__page-{.section collection}{urlId}{.end} {squarespace.page-classes}">
 
 <header>
   <a href="/" class="header__menu"><i class="i i-menu"></i></a>

@@ -694,11 +694,6 @@ header {
   top: -99997px;
   left: -99997px;
 }
-.home__section-h p {
-  margin: 0;
-  padding: 0;
-  display: inline;
-}
 .home__section-a {
   position: absolute;
   left: 0;
@@ -715,6 +710,11 @@ header {
   -moz-transition: border-color 0.2s;
   -o-transition: border-color 0.2s;
   transition: border-color 0.2s;
+}
+.home__section-a span p {
+  margin: 0;
+  padding: 0;
+  display: inline;
 }
 .home__section-a:hover {
   color: #ffffff;

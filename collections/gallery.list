@@ -2,7 +2,10 @@
   <ul class="collection__grid">
     {.repeated section items}
     <li class="collection__grid-itm">
-      <img src="{assetUrl}" alt="{.section title}{@}{.end}" class="collection__grid-itm-img">
+
+    {.section clickthroughUrl}<a href="{@}">{.end}
+        <img src="{assetUrl}" alt="{.section title}{@}{.end}" class="collection__grid-itm-img">
+      {.section clickthroughUrl}</a>{.end}
     </li>
     {.end}
   </ul>

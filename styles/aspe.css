@@ -814,6 +814,9 @@ header {
   color: #ffffff;
   text-decoration: none;
 }
+.body__page-contact .form-block .form-button-wrapper .button:focus {
+  background: transparent;
+}
 .contact__section {
   display: table;
   -webkit-box-sizing: border-box;

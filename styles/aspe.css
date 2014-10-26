@@ -873,6 +873,8 @@ header {
   text-decoration: none;
   color: #ffffff;
   border-bottom: 1px solid #ffffff;
+  display: inline-block;
+  line-height: 1.2;
 }
 .contact__form {
   display: block;

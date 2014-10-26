@@ -1165,34 +1165,34 @@ header {
   .home__section-a {
     bottom: 33px;
   }
-  .contact__section {
+  .body__page-contact .contact__section {
     display: block;
     padding: 33px 20px 40px;
     width: auto;
     height: auto;
   }
-  .form-block {
+  .body__page-contact .form-block {
     margin: 36px -20px;
   }
-  .form-block .form-item .field-element {
+  .body__page-contact .form-block .form-item .field-element {
     width: 171px;
   }
-  .form-block .form-button-wrapper {
+  .body__page-contact .form-block .form-button-wrapper {
     display: inline-block;
     vertical-align: middle;
   }
-  .form-block .form-button-wrapper .button {
+  .body__page-contact .form-block .form-button-wrapper .button {
     width: auto;
     margin-left: 20px;
     padding: 0;
   }
-  .contact__form {
+  .body__page-contact .contact__form {
     margin: 36px -20px;
   }
-  .contact__section-in {
+  .body__page-contact .contact__section-in {
     display: block;
   }
-  .contact__section-in .col > .sqs-block-markdown:first-child {
+  .body__page-contact .contact__section-in .col > .sqs-block-markdown:first-child {
     margin-top: 2em;
   }
   .about__section {

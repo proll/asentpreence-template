@@ -734,6 +734,83 @@ header {
   height: 100%;
   min-height: 100%;
 }
+.body__page-contact .form-block {
+  display: block;
+  margin: 36px 0;
+  padding: 0;
+  font-size: 0;
+}
+.body__page-contact .form-block .field-list {
+  display: inline-block;
+}
+.body__page-contact .form-block .form-item {
+  padding: 0;
+  display: inline-block;
+}
+.body__page-contact .form-block .form-item .title {
+  display: none;
+}
+.body__page-contact .form-block .form-item .field-element {
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  resize: none;
+  overflow: auto;
+  color: #ffffff;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1;
+  padding: 0;
+  border-bottom: 1px solid #ffffff;
+  display: inline-block;
+  vertical-align: middle;
+  height: 18px;
+  width: 340px;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.body__page-contact .form-block .form-item .field-element:-moz-placeholder {
+  color: #ffffff;
+  opacity: 1;
+}
+.body__page-contact .form-block .form-item .field-element::-moz-placeholder {
+  color: #ffffff;
+  opacity: 1;
+}
+.body__page-contact .form-block .form-item .field-element:-ms-input-placeholder {
+  color: #ffffff;
+  opacity: 1;
+}
+.body__page-contact .form-block .form-item .field-element::-webkit-input-placeholder {
+  color: #ffffff;
+}
+.body__page-contact .form-block .form-button-wrapper {
+  display: inline-block;
+}
+.body__page-contact .form-block .form-button-wrapper .button {
+  padding: 0;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 18px;
+  line-height: 2;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  color: #ffffff;
+  text-transform: uppercase;
+  width: 112px;
+  cursor: pointer;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.body__page-contact .form-block .form-button-wrapper .button:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
 .contact__section {
   display: table;
   -webkit-box-sizing: border-box;

@@ -32,14 +32,12 @@ $(function() {
 	// contact - edits
 	// consol
 	$('.field-element[name=email]')
-		.on('touchstart click focus', function(e) {
+		.on('focus', function(e) {
 			var $edit = $(e.currentTarget),
 				txt = $edit.attr('placeholder');
-
-			console.log(txt, ':')
-			// $edit
-			// 	.data('placeholder', txt)
-			// 	.attr('placeholder', '');
+			$edit
+				.data('placeholder', txt)
+				.attr('placeholder', '');
 			return true;
 		})
 		.on('blur', function(e) {

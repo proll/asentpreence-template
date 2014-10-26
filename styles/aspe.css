@@ -740,6 +740,10 @@ header {
   padding: 0;
   font-size: 0;
 }
+.body__page-contact .form-block .form-submission-text {
+  font-size: 18px;
+  line-height: 1;
+}
 .body__page-contact .form-block .field-error {
   display: none;
 }

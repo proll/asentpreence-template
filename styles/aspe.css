@@ -735,7 +735,7 @@ header {
   min-height: 100%;
 }
 .body__page-contact .sqs-block {
-  padding: 0;
+  padding: 0 !important;
 }
 .body__page-contact .form-block {
   display: block;

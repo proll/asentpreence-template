@@ -4,7 +4,7 @@
       {.collection?}
         <section class="home__section home__section1" style="background-image:url({collection.mainImage.assetUrl})">
           <a href="{collection.fullUrl}" class="home__section-h"><h1>{collection.pageTitle}</h1></a>
-          <a href="{collection.fullUrl}" class="home__section-a"><span>View {collection.navigationTitle}</span></a>
+          <a href="{collection.fullUrl}" class="home__section-a"><span>View {collection.description}</span></a>
         </section>
       {.end}
     {.end}

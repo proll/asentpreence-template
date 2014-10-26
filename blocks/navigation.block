@@ -9,7 +9,7 @@
       {.repeated section items}
         {.collection?}
           <li class="menu__item">
-            <a href="{collection.fullUrl}" class="menu__item-a">{collection.pageTitle}</a>
+            <a href="{collection.fullUrl}" class="menu__item-a">{collection.navigationTitle}</a>
           </li>
         {.end}
 

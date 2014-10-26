@@ -547,24 +547,24 @@ header {
   left: 40px;
   right: 40px;
 }
-.overlay__slide h3 {
+.overlay__slide .overlay__desc-h {
   font-size: 14px;
   line-height: 24px;
   font-weight: normal;
   margin: 0 0 15px;
 }
-.overlay__slide h3 p {
+.overlay__slide .overlay__desc-h p {
   display: inline;
   padding: 0;
   margin: 0;
 }
-.overlay__slide span {
+.overlay__slide .overlay__desc-misc {
   font-size: 11px;
   line-height: 14px;
   font-family: 'Courier New', Courier, sans;
   margin: 0;
 }
-.overlay__slide span div {
+.overlay__slide .overlay__desc-misc div {
   display: inline;
   padding: 0;
   margin: 0;

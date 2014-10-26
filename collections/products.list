@@ -2,13 +2,13 @@
 	<div class="overlay__slides-cont">
 		<div class="overlay__slides">
 			{.repeated section items}
-			<div class="overlay__slide"{.section assetUrl} style="background-image:{@}"{.end}>
+			<div class="overlay__slide"{.section assetUrl} style="background-image:url({@})"{.end}>
 				{.section title}
 				<h2>{@}</h2>
 				{.end}
 				<span class="overlay__desc">
 					{.section description}<h3>{@}</h3>{.end}
-					{.section excerpt}<p><strong>Composition:</strong> {@}</p>{.end}
+					{.section excerpt}<span><strong>Composition:</strong> {@}</span>{.end}
 
 				</span>
 			</div>

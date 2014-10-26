@@ -528,7 +528,6 @@ header {
   text-align: center;
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  background-image: url(/images/st/product-part.jpg);
   -webkit-background-size: auto 100%;
   -moz-background-size: auto 100%;
   -o-background-size: auto 100%;
@@ -554,10 +553,15 @@ header {
   font-weight: normal;
   margin: 0 0 15px;
 }
-.overlay__slide p {
+.overlay__slide span {
   font-size: 11px;
   line-height: 14px;
   font-family: 'Courier New', Courier, sans;
+  margin: 0;
+}
+.overlay__slide span p {
+  display: inline;
+  padding: 0;
   margin: 0;
 }
 .overlay__slide strong {

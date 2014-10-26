@@ -734,6 +734,9 @@ header {
   height: 100%;
   min-height: 100%;
 }
+.body__page-contact .sqs-block {
+  padding: 0;
+}
 .body__page-contact .form-block {
   display: block;
   margin: 36px 0;

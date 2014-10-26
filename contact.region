@@ -1,11 +1,5 @@
 <section class="contact__section">
   <div class="contact__section-in">
-    <form class="contact__form">
-      <input type="text" class="contact__inp" placeholdertext="Enter your email address for news and exclusive offers" placeholder="Enter your email address for news and exclusive offers">
-      <input type="text" class="contact__inp contact__inp_phone" placeholdertext="Subscribe to our Newsletter" placeholder="Subscribe to our Newsletter">
-      <button class="contact__submit" type="submit">Submit</button>
-      <a class="contact__submit-a">Submit</a>
-    </form>
     {squarespace.main-content}
     <div class="contact__row">
       <span class="contact__social">

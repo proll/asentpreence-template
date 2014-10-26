@@ -2,7 +2,7 @@
 	<div class="overlay__slides-cont">
 		<div class="overlay__slides">
 			{.repeated section items}
-			<div class="overlay__slide">
+			<div class="overlay__slide"{.section assetUrl} style="background-image:{@}"{.end}>
 				{.section title}
 				<h2>{@}</h2>
 				{.end}

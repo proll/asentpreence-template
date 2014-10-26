@@ -1171,28 +1171,29 @@ header {
     width: auto;
     height: auto;
   }
-  .contact__section-in {
-    display: block;
+  .form-block {
+    margin: 36px -20px;
   }
-  .contact__row {
-    margin-top: 2em;
+  .form-block .form-item .field-element {
+    width: 171px;
   }
-  .contact__row:last-child {
-    margin-top: 0;
+  .form-block .form-button-wrapper {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .form-block .form-button-wrapper .button {
+    width: auto;
+    margin-left: 20px;
+    padding: 0;
   }
   .contact__form {
     margin: 36px -20px;
   }
-  .contact__inp {
-    width: 171px;
-    display: none;
+  .contact__section-in {
+    display: block;
   }
-  .contact__inp_phone {
-    display: inline-block;
-  }
-  .contact__submit-a {
-    width: auto;
-    margin-left: 20px;
+  .contact__section-in .col > .sqs-block-markdown:first-child {
+    margin-top: 2em;
   }
   .about__section {
     display: block;

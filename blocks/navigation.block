@@ -19,8 +19,11 @@
           </li>
         {.end}
       {.end}
-    {.or}
-
+    {.end}
+  {.end}
+</ul>
+<ul class="menu__group-list">
+  {.repeated section items}
       <li class="menu__item">
 
         {.section collection}

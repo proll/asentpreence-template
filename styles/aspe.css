@@ -1192,7 +1192,7 @@ header {
   .body__page-contact .contact__section-in {
     display: block;
   }
-  .body__page-contact .contact__section-in .col > .sqs-block-markdown:first-child {
+  .body__page-contact .contact__section-in .col > .sqs-block-markdown > .sqs-block-content p {
     margin-top: 2em;
   }
   .about__section {

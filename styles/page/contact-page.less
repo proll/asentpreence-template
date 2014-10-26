@@ -8,9 +8,19 @@
 		// email form rewrite 
 		.form-block {
 			.contact__form;
-				
+			
+
+			.field-error {
+				display: none;
+			}
 			.field-list {
 				display: inline-block;
+				.field-error {
+					display: block;
+					margin: 0;
+					position: absolute;
+					top: -57px;
+				}
 			}
 				
 			.form-item {
@@ -24,10 +34,8 @@
 
 				.field-element {
 					.contact__inp;
-					&:focus {
-						background: transparent;
-					}
 				}
+
 			}
 
 			.form-button-wrapper {
@@ -112,6 +120,10 @@
 			text-align: center;
 			-webkit-font-smoothing:antialiased;
 			-moz-osx-font-smoothing:grayscale
+
+			&:focus {
+				background: transparent;
+			}
 		}
 
 		.contact__inp_phone {

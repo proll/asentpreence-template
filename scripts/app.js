@@ -142,8 +142,8 @@ $(function() {
 
 		function init(new_href) {
 			if(!$overlay) {
-				$overlay = $('<div  class="overlay"/>')
-				$overlay.html(
+				$overlay = $('<div class="overlay"/>')
+				$overlay.append(
 					'<div class="overlay__slides-cont"></div'+
 					'<a href="close" class="overlay__close"><i class="i i-close"></i></a>'+
 					'<span href="prev" class="overlay__prev"><i class="i i-al"></i></span>'+

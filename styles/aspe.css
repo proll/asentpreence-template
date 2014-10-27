@@ -467,6 +467,7 @@ header {
   right: 0;
   bottom: 0;
   z-index: 10;
+  display: none;
 }
 .overlay__close {
   display: block;

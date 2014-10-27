@@ -144,7 +144,7 @@ $(function() {
 			if(!$overlay) {
 				$overlay = $('<div class="overlay"/>')
 				$overlay.append(
-					'<div class="overlay__slides-cont"></div'+
+					'<div class="overlay__slides-cont"></div>'+
 					'<a href="close" class="overlay__close"><i class="i i-close"></i></a>'+
 					'<span href="prev" class="overlay__prev"><i class="i i-al"></i></span>'+
 					'<span href="next" class="overlay__next"><i class="i i-ar"></i></span>');

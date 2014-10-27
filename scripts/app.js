@@ -210,7 +210,7 @@ $(function() {
 		}
 
 		function activateSwiper () {
-			this.slider =  new Swipe($slides_cont.get(0), {
+			slider =  new Swipe($slides_cont.get(0), {
 				startSlide: num,
 				speed: 400,
 				continuous: 	false,

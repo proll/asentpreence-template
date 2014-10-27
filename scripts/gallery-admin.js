@@ -18,7 +18,7 @@ $(function() {
 					'<div class="galleryadmin-overlay__cont"></div>'+
 					'<a href="close" class="galleryadmin-overlay__close"><i class="i i-closew"></i></a>');
 				$overlay.find('.galleryadmin-overlay__close').on('.touchstart click', _.bind(hidePopup, this));
-				$cont = $overlay.find('.galleryadmin-overlay__slides-cont');
+				$cont = $overlay.find('.galleryadmin-overlay__cont');
 				$body.append($overlay);
 			}
 

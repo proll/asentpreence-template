@@ -1,6 +1,5 @@
 $(function() {
-	var $overlay = $('.overlay'),
-		$body = $('body'),
+	var $body = $('body'),
 		$window = $(window);
 	// $overlay.find('.overlay__close').on('touchstart click', function(e) {
 	// 		if(e && e.preventDefault) {

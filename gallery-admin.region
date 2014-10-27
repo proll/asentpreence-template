@@ -3,3 +3,4 @@
 	{squarespace.main-content}
 	</div>
 </section>
+<squarespace:script src="galleryadmin.js" />

@@ -381,17 +381,17 @@ BODY {
   overflow: auto;
 }
 .i {
-  background: url("/assets/sprites/i-629c8.png") no-repeat 0 0;
+  background: url("/assets/sprites/i-e3dbf.png") no-repeat 0 0;
   vertical-align: text-top;
   display: inline-block;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5) {
   .i {
-    background: url("/assets/sprites/i-2x-629c8.png") no-repeat 0 0;
-    -webkit-background-size: 253px 426px;
-    -moz-background-size: 253px 426px;
-    -o-background-size: 253px 426px;
-    background-size: 253px 426px;
+    background: url("/assets/sprites/i-2x-e3dbf.png") no-repeat 0 0;
+    -webkit-background-size: 253px 491px;
+    -moz-background-size: 253px 491px;
+    -o-background-size: 253px 491px;
+    background-size: 253px 491px;
     vertical-align: text-top;
     display: inline-block;
   }
@@ -411,20 +411,25 @@ BODY {
   height: 64px;
   background-position: 0px -198px;
 }
+.i-closew {
+  width: 64px;
+  height: 64px;
+  background-position: 0px -263px;
+}
 .i-logo {
   width: 253px;
   height: 56px;
-  background-position: 0px -263px;
+  background-position: 0px -328px;
 }
 .i-menu {
   width: 61px;
   height: 57px;
-  background-position: 0px -320px;
+  background-position: 0px -385px;
 }
 .i-plus {
   width: 48px;
   height: 48px;
-  background-position: 0px -378px;
+  background-position: 0px -443px;
 }
 /* Blocks */
 header {
@@ -1134,6 +1139,132 @@ header {
   box-sizing: border-box;
   width: 78%;
   margin: 100px auto 40px;
+}
+.galleryadmin-overlay-visible {
+  overflow: hidden;
+}
+.galleryadmin-overlay-visible .galleryadmin-overlay {
+  display: block;
+}
+.galleryadmin-overlay {
+  background: #000000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  display: none;
+}
+.galleryadmin-overlay__close {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 20px;
+  font-size: 0;
+  line-height: 0;
+  z-index: 2;
+}
+.galleryadmin-overlay__prev {
+  position: absolute;
+  top: 50%;
+  margin-top: -49px;
+  padding: 0 20px;
+  left: 0;
+  font-size: 0;
+  line-height: 0;
+  z-index: 2;
+  cursor: pointer;
+}
+.galleryadmin-overlay__next {
+  position: absolute;
+  top: 50%;
+  margin-top: -49px;
+  padding: 0 20px;
+  right: 0;
+  font-size: 0;
+  line-height: 0;
+  z-index: 2;
+  cursor: pointer;
+}
+.galleryadmin-overlay__slides-cont {
+  overflow: hidden;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  height: 100%;
+}
+.loading.galleryadmin-overlay__slides-cont {
+  background: url(/assets/ani/spinner.gif) 50% 50% no-repeat;
+}
+.galleryadmin-overlay__slides {
+  font-size: 0;
+  line-height: 0;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+}
+.galleryadmin-overlay__slide {
+  float: left;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  vertical-align: top;
+  min-height: 100px;
+  text-align: center;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  -webkit-background-size: auto 100%;
+  -moz-background-size: auto 100%;
+  -o-background-size: auto 100%;
+  background-size: auto 100%;
+  color: #000000;
+}
+.galleryadmin-overlay__slide h2 {
+  font-size: 18px;
+  line-height: 2;
+  font-weight: normal;
+  margin: 0;
+  padding: 149px 40px 0;
+}
+.galleryadmin-overlay__slide .galleryadmin-overlay__desc {
+  position: absolute;
+  bottom: 77px;
+  left: 40px;
+  right: 40px;
+}
+.galleryadmin-overlay__slide .galleryadmin-overlay__desc-h {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: normal;
+  margin: 0 0 15px;
+}
+.galleryadmin-overlay__slide .galleryadmin-overlay__desc-h p {
+  display: inline;
+  padding: 0;
+  margin: 0;
+}
+.galleryadmin-overlay__slide .galleryadmin-overlay__desc-misc {
+  font-size: 11px;
+  line-height: 14px;
+  font-family: 'Courier New', Courier, sans;
+  margin: 0;
+}
+.galleryadmin-overlay__slide .galleryadmin-overlay__desc-misc p,
+.galleryadmin-overlay__slide .galleryadmin-overlay__desc-misc div {
+  padding: 0;
+  margin: 0;
+}
+.galleryadmin-overlay__slide strong {
+  font-weight: normal;
+  text-transform: uppercase;
 }
 .error-page__list,
 .error-page__description {

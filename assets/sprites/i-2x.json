@@ -1,7 +1,7 @@
 {
   "name": "i-2x",
-  "checksum": "629c847dab3862f389c7f1a2fcaf33e8",
-  "shortsum": "629c8",
+  "checksum": "e3dbf504425b8ea0ea44a1de33e57bcc",
+  "shortsum": "e3dbf",
   "images": [
     {
       "name": "al",
@@ -31,13 +31,22 @@
       "positionY": 396
     },
     {
+      "name": "closew",
+      "filename": "closew.png",
+      "checksum": "f9d8f916252285bfe0a5b8da7507f866",
+      "width": 128,
+      "height": 128,
+      "positionX": 0,
+      "positionY": 526
+    },
+    {
       "name": "logo",
       "filename": "logo.png",
       "checksum": "997e2f16df8c3cf406953865de81841e",
       "width": 505,
       "height": 112,
       "positionX": 0,
-      "positionY": 526
+      "positionY": 656
     },
     {
       "name": "menu",
@@ -46,7 +55,7 @@
       "width": 121,
       "height": 113,
       "positionX": 0,
-      "positionY": 640
+      "positionY": 770
     },
     {
       "name": "plus",
@@ -55,7 +64,7 @@
       "width": 96,
       "height": 96,
       "positionX": 0,
-      "positionY": 755
+      "positionY": 885
     }
   ]
 }

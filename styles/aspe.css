@@ -1190,7 +1190,6 @@ header {
   cursor: pointer;
 }
 .galleryadmin-overlay__cont {
-  overflow: hidden;
   position: relative;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -1198,9 +1197,13 @@ header {
   padding: 0;
   height: 100%;
   display: inline-block;
+  overflow: auto;
 }
 .loading.galleryadmin-overlay__cont {
   background: url(/assets/ani/spinner.gif) 50% 50% no-repeat;
+}
+.galleryadmin-overlay__img {
+  max-width: none;
 }
 .error-page__list,
 .error-page__description {

@@ -76,12 +76,12 @@
 		}
 
 		.galleryadmin-overlay__cont {
-			overflow: hidden;
 			position: relative;
 			.box-sizing(border-box);
 			padding: 0;
 			height: 100%;
 			display: inline-block;
+			overflow: auto;
 		}
 
 		.loading {
@@ -89,3 +89,7 @@
 				background: url(/assets/ani/spinner.gif) 50% 50% no-repeat;
 			}
 		}
+
+			.galleryadmin-overlay__img {
+				max-width: none;
+			}

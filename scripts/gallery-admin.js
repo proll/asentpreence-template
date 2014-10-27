@@ -57,7 +57,7 @@ $(function() {
 			jqxhr = 
 				$.getJSON(href)
 					.done(function(result) {
-						$cont.html('<img class="galleryadmin-overlay__img" src="' + image + '">"');
+						$cont.html('<img class="galleryadmin-overlay__img" src="' + image + '">');
 						console.log(result);
 						// $slides = $cont.find('.overlay__slide');
 

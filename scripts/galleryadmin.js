@@ -34,7 +34,7 @@ $(function() {
 			if(e && e.preventDefault) {
 				e.preventDefault();
 			}
-			$body.toggleClass('overlay-visible', true);
+			$body.toggleClass('galleryadmin-overlay-visible', true);
 			return false;
 		}
 
@@ -42,7 +42,7 @@ $(function() {
 			if(e && e.preventDefault) {
 				e.preventDefault();
 			}
-			$body.toggleClass('overlay-visible', false);
+			$body.toggleClass('galleryadmin-overlay-visible', false);
 			return false;
 		}
 

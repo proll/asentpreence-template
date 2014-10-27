@@ -86,6 +86,7 @@ $(function() {
 				})
 				num++;
 			}
+			return false;
 		}
 
 

@@ -1219,6 +1219,8 @@ header {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  width: 48px;
+  height: 48px;
 }
 .galleryadmin-overlay__item-thumb::before {
   content: '';

@@ -225,6 +225,7 @@ $(function() {
 		}
 
 		function prevSlide() {
+			console.log(num, count);
 			if((num - 1) >= 0) {
 				num--;
 			}
@@ -232,6 +233,7 @@ $(function() {
 		}
 
 		function nextSlide() {
+			console.log(num, count);
 			if((num + 1) < count) {
 				num++;
 			}
@@ -242,7 +244,6 @@ $(function() {
 			init: init
 		}
 	}
-
 
 	var pg = new ProductGallery();
 	$('[data-target=popup]').on('touchstart click', function(e) {

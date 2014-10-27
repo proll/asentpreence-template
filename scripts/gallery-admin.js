@@ -83,7 +83,8 @@ $(function() {
 				$item.data('id', items_arr[num].id);
 				$item.find('.galleryadmin-overlay__item-thumb').css({
 					'background-image': 'url(' + items_arr[num].assetUrl + '?format=100w)'
-				})
+				});
+				$item.draggable();
 				num++;
 			}
 			return false;

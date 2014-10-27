@@ -149,6 +149,8 @@ $(function() {
 					'<span href="prev" class="overlay__prev"><i class="i i-al"></i></span>'+
 					'<span href="next" class="overlay__next"><i class="i i-ar"></i></span>');
 				$overlay.find('.overlay__close').on('.touchstart click', _.bind(hidePopup, this));
+				$overlay.find('.overlay__prev').on('touchstart click', _.bind(prevSlide, this))
+				$overlay.find('.overlay__next').on('touchstart click', _.bind(nextSlide, this))
 				$slides_cont = $overlay.find('.overlay__slides-cont');
 				$body.append($overlay);
 			}
@@ -220,12 +222,9 @@ $(function() {
 				// transitionEnd: function(index, elem) {}
 			});
 
-			$overlay.find('.overlay__prev').on('touchstart click', _.bind(prevSlide, this))
-			$overlay.find('.overlay__next').on('touchstart click', _.bind(nextSlide, this))
 		}
 
 		function prevSlide() {
-			console.log(num, count);
 			if((num - 1) >= 0) {
 				num--;
 			}
@@ -233,7 +232,6 @@ $(function() {
 		}
 
 		function nextSlide() {
-			console.log(num, count);
 			if((num + 1) < count) {
 				num++;
 			}

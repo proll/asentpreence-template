@@ -82,7 +82,7 @@ $(function() {
 				var $item = $(item_template).appendTo($cont);
 				$item.data('id', items_arr[num].id);
 				$item.find('.galleryadmin-overlay__item-thumb').css({
-					'background-image': 'url(' + items_arr[num].assetUrl + ')'
+					'background-image': 'url(' + items_arr[num].assetUrl + '?format=100w)'
 				})
 				num++;
 			}

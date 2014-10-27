@@ -1219,8 +1219,11 @@ header {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  width: 48px;
-  height: 48px;
+  width: 42px;
+  height: 42px;
+}
+.galleryadmin-overlay__item-thumb i {
+  vertical-align: top;
 }
 .galleryadmin-overlay__item-thumb::before {
   content: '';
@@ -1228,10 +1231,11 @@ header {
   width: 0;
   height: 0;
   top: 50%;
-  left: -12px;
-  boder-right: 12px solid #ffffff;
-  boder-top: 12px solid transparent;
-  boder-bottom: 12px solid transparent;
+  left: -20px;
+  border-right: 24px solid #ffffff;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  margin-top: -12px;
 }
 .error-page__list,
 .error-page__description {

@@ -105,8 +105,12 @@
 							.border-radius(48px);
 							background-color: @black;
 							.background-size(cover);
-							width: 48px;
-							height: 48px;
+							width: 42px;
+							height: 42px;
+
+							i {
+								vertical-align: top;
+							}
 
 							&::before {
 								content: '';
@@ -114,9 +118,10 @@
 								width: 0;
 								height: 0;
 								top: 50%;
-								left: -12px;
-								boder-right: 12px solid @white;
-								boder-top: 12px solid transparent;
-								boder-bottom: 12px solid transparent;
+								left: -20px;
+								border-right: 24px solid @white;
+								border-top: 12px solid transparent;
+								border-bottom: 12px solid transparent;
+								margin-top: -12px;
 							}
 						}

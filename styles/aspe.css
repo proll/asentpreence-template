@@ -1162,7 +1162,7 @@ header {
   position: absolute;
   top: 0;
   left: 0;
-  padding: 20px;
+  padding: 29px;
   font-size: 0;
   line-height: 0;
   z-index: 2;
@@ -1192,6 +1192,44 @@ header {
 }
 .galleryadmin-overlay__img {
   max-width: none;
+}
+.galleryadmin-overlay__item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 3;
+}
+.galleryadmin-overlay__item-inner {
+  position: relative;
+  margin-top: -24px;
+  margin-left: -24px;
+  width: 48px;
+  height: 48px;
+}
+.galleryadmin-overlay__item-thumb {
+  position: absolute;
+  left: 60px;
+  top: 0;
+  border: 3px solid #ffffff;
+  -webkit-border-radius: 48px;
+  -moz-border-radius: 48px;
+  border-radius: 48px;
+  background-color: #000000;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.galleryadmin-overlay__item-thumb::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 50%;
+  left: -12px;
+  boder-right: 12px solid #ffffff;
+  boder-top: 12px solid transparent;
+  boder-bottom: 12px solid transparent;
 }
 .error-page__list,
 .error-page__description {

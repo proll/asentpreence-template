@@ -9,8 +9,12 @@ $(function() {
 			slider,
 			href = '',
 			image = '',
+			num = 0,
+			count = 0,
 			description = '',
-			jqxhr;
+			items_arr = [],
+			jqxhr,
+			item_template = '<div class="galleryadmin-overlay__item"><div class="galleryadmin-overlay__item-inner"><i class="i i-plus"></i><div class="galleryadmin-overlay__item-thumb"></div></div></div>';
 
 		function init(new_href, img_url, descr) {
 			if(!$overlay) {
@@ -19,11 +23,13 @@ $(function() {
 					'<div class="galleryadmin-overlay__cont"></div>'+
 					'<a href="add" class="galleryadmin-overlay__add"><i class="i i-plus"></i></a>'+
 					'<a href="close" class="galleryadmin-overlay__close"><i class="i i-closew"></i></a>');
+				$overlay.find('.galleryadmin-overlay__add').on('.touchstart click', _.bind(addItem, this));
 				$overlay.find('.galleryadmin-overlay__close').on('.touchstart click', _.bind(hidePopup, this));
 				$cont = $overlay.find('.galleryadmin-overlay__cont');
 				$body.append($overlay);
 			}
 
+			items_arr = [];
 			image = img_url;
 			description = descr;
 
@@ -59,13 +65,10 @@ $(function() {
 				$.getJSON(href)
 					.done(function(result) {
 						$cont.html('<img class="galleryadmin-overlay__img" src="' + image + '">');
-						console.log(result);
-						// $slides = $cont.find('.overlay__slide');
+						items_arr = result.items;
 
-						// num = 0;
-						// count = $slides.length;
-
-						// activateSwiper();
+						num = 0;
+						count = items_arr.length;
 					})
 					.fail(function() {
 					})
@@ -74,29 +77,17 @@ $(function() {
 					});
 		}
 
-
-		function toggleSlide(num) {
-			if(slider) {
-				slider.slide(num, 400);
+		function addItem() {
+			if(num+1 < count) {
+				var $item = $(item_template).appendTo($cont);
+				$item.data('id', items_arr[num].id);
+				$item.find('.galleryadmin-overlay__item-thumb').css({
+					'background-image': 'url(' + items_arr[num].assetUrl + ')'
+				})
+				num++;
 			}
 		}
 
-		function swipeEnd(index, el) {
-			num = index;
-		}
-
-		function activateSwiper () {
-			slider =  new Swipe($cont.get(0), {
-				startSlide: num,
-				speed: 400,
-				continuous: 	false,
-				disableScroll: false,
-				stopPropagation: false,
-				callback: _.bind(swipeEnd, this)
-				// transitionEnd: function(index, elem) {}
-			});
-
-		}
 
 		return {
 			init: init

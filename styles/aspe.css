@@ -1155,6 +1155,7 @@ header {
   bottom: 0;
   z-index: 10;
   display: none;
+  text-align: center;
 }
 .galleryadmin-overlay__close {
   display: block;
@@ -1188,7 +1189,7 @@ header {
   z-index: 2;
   cursor: pointer;
 }
-.galleryadmin-overlay__slides-cont {
+.galleryadmin-overlay__cont {
   overflow: hidden;
   position: relative;
   -webkit-box-sizing: border-box;
@@ -1196,75 +1197,10 @@ header {
   box-sizing: border-box;
   padding: 0;
   height: 100%;
+  display: inline-block;
 }
-.loading.galleryadmin-overlay__slides-cont {
+.loading.galleryadmin-overlay__cont {
   background: url(/assets/ani/spinner.gif) 50% 50% no-repeat;
-}
-.galleryadmin-overlay__slides {
-  font-size: 0;
-  line-height: 0;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
-  overflow: hidden;
-  position: relative;
-  height: 100%;
-}
-.galleryadmin-overlay__slide {
-  float: left;
-  width: 100%;
-  height: 100%;
-  position: relative;
-  vertical-align: top;
-  min-height: 100px;
-  text-align: center;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  -webkit-background-size: auto 100%;
-  -moz-background-size: auto 100%;
-  -o-background-size: auto 100%;
-  background-size: auto 100%;
-  color: #000000;
-}
-.galleryadmin-overlay__slide h2 {
-  font-size: 18px;
-  line-height: 2;
-  font-weight: normal;
-  margin: 0;
-  padding: 149px 40px 0;
-}
-.galleryadmin-overlay__slide .galleryadmin-overlay__desc {
-  position: absolute;
-  bottom: 77px;
-  left: 40px;
-  right: 40px;
-}
-.galleryadmin-overlay__slide .galleryadmin-overlay__desc-h {
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: normal;
-  margin: 0 0 15px;
-}
-.galleryadmin-overlay__slide .galleryadmin-overlay__desc-h p {
-  display: inline;
-  padding: 0;
-  margin: 0;
-}
-.galleryadmin-overlay__slide .galleryadmin-overlay__desc-misc {
-  font-size: 11px;
-  line-height: 14px;
-  font-family: 'Courier New', Courier, sans;
-  margin: 0;
-}
-.galleryadmin-overlay__slide .galleryadmin-overlay__desc-misc p,
-.galleryadmin-overlay__slide .galleryadmin-overlay__desc-misc div {
-  padding: 0;
-  margin: 0;
-}
-.galleryadmin-overlay__slide strong {
-  font-weight: normal;
-  text-transform: uppercase;
 }
 .error-page__list,
 .error-page__description {

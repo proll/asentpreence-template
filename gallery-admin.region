@@ -3,4 +3,5 @@
 	{squarespace.main-content}
 	</div>
 </section>
-<squarespace:script src="galleryadmin.js" />
+<squarespace:script src="vendor/jquery/jquery-ui-draggable.min"/>
+<squarespace:script src="gallery-admin.js" />

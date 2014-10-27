@@ -37,6 +37,7 @@
 		bottom: 0;
 		z-index: 10;
 		display: none;
+		text-align: center;
 	}
 
 		.galleryadmin-overlay__close {
@@ -74,85 +75,17 @@
 			cursor: pointer;
 		}
 
-		.galleryadmin-overlay__slides-cont {
+		.galleryadmin-overlay__cont {
 			overflow: hidden;
 			position: relative;
 			.box-sizing(border-box);
 			padding: 0;
 			height: 100%;
+			display: inline-block;
 		}
 
 		.loading {
-			&.galleryadmin-overlay__slides-cont {
+			&.galleryadmin-overlay__cont {
 				background: url(/assets/ani/spinner.gif) 50% 50% no-repeat;
 			}
 		}
-			.galleryadmin-overlay__slides {
-				font-size: 0;
-				line-height: 0;
-				.transition(all .3s);
-				overflow: hidden;
-				position: relative;
-				height: 100%;
-			}
-
-				.galleryadmin-overlay__slide {
-					float: left;
-					width: 100%;
-					height: 100%;
-					position: relative;
-					vertical-align: top;
-					min-height: 100px;
-					text-align: center;
-					background-position: 50% 50%;
-					background-repeat: no-repeat;
-
-					// background-image: url(/images/st/product-part.jpg);
-					.background-size(auto 100%);
-
-					color: @black;
-
-					h2 {
-						font-size: 18px;
-						line-height: 2;
-						font-weight: normal;
-						margin: 0;
-						padding: 109px+40px 40px 0;
-					}
-
-					.galleryadmin-overlay__desc {
-						position: absolute;
-						bottom: 80px-3px;
-						left: 40px;
-						right: 40px;
-					}
-
-						.galleryadmin-overlay__desc-h {
-							font-size: 14px;
-							line-height: 24px;
-							font-weight: normal;
-							margin: 0 0 15px;
-							p {
-								display: inline;
-								padding: 0;
-								margin: 0;
-							}
-						}
-
-						.galleryadmin-overlay__desc-misc {
-							font-size: 11px;
-							line-height: 14px;
-							font-family: 'Courier New', Courier, sans;
-							margin: 0;
-							p,
-							div {
-								padding: 0;
-								margin: 0; 
-							}
-						}
-
-							strong {
-								font-weight: normal;
-								text-transform: uppercase;
-							}
-				}

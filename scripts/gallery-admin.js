@@ -5,24 +5,25 @@ $(function() {
 	// we counts on this is a product carousel
 	var GalleryAdmin = function () {
 		var $overlay,
-			$slides_cont,
-			$slides,
-			num = 0,
-			count = 0,
+			$cont,
 			slider,
 			href = '',
+			description = '',
 			jqxhr;
 
-		function init(new_href) {
+		function init(new_href, img_url, descr) {
 			if(!$overlay) {
 				$overlay = $('<div class="galleryadmin-overlay"/>')
 				$overlay.append(
-					'<div class="galleryadmin-overlay__slides-cont"></div>'+
+					'<div class="galleryadmin-overlay__cont"></div>'+
 					'<a href="close" class="galleryadmin-overlay__close"><i class="i i-closew"></i></a>');
 				$overlay.find('.galleryadmin-overlay__close').on('.touchstart click', _.bind(hidePopup, this));
-				$slides_cont = $overlay.find('.galleryadmin-overlay__slides-cont');
+				$cont = $overlay.find('.galleryadmin-overlay__slides-cont');
 				$body.append($overlay);
 			}
+
+			description = descr;
+
 			if(new_href !== href) {
 				href = new_href;
 				loadPopup(href);
@@ -47,15 +48,16 @@ $(function() {
 		}
 
 		function loadPopup(href) {
-			$slides_cont.toggleClass('loading', true);
-			$slides_cont.html('');
+			$cont.toggleClass('loading', true);
+			$cont.html('');
 
 			if(jqxhr) jqxhr.abort();
 			jqxhr = 
 				$.getJSON(href)
 					.done(function(result) {
-						// $slides_cont.html(result);
-						// $slides = $slides_cont.find('.overlay__slide');
+						$cont.html('<img class="galleryadmin-overlay__img" src="' + img_url + '">"');
+						console.log(result);
+						// $slides = $cont.find('.overlay__slide');
 
 						// num = 0;
 						// count = $slides.length;
@@ -65,7 +67,7 @@ $(function() {
 					.fail(function() {
 					})
 					.always(function() {
-						$slides_cont.toggleClass('loading', false);
+						$cont.toggleClass('loading', false);
 					});
 		}
 
@@ -81,7 +83,7 @@ $(function() {
 		}
 
 		function activateSwiper () {
-			slider =  new Swipe($slides_cont.get(0), {
+			slider =  new Swipe($cont.get(0), {
 				startSlide: num,
 				speed: 400,
 				continuous: 	false,
@@ -102,13 +104,14 @@ $(function() {
 		$item;
 
 	$('.summary-item a').on('touchstart click', function(e) {
-		var click_trough_url;
 		e.preventDefault();
 		$item = $(e.currentTarget).parents('.summary-item');
 
-		click_trough_url = $item.data('click-through-url');
+		var click_trough_url = $item.data('click-through-url'),
+			img_url = $item.find('.summary-thumbnail>img').data('image'),
+			description = $item.find('.summary-excerpt p').text();
 		if(!!click_trough_url) {
-			galadm.init(click_trough_url+'?format=json');
+			galadm.init(click_trough_url+'?format=json', img_url, description);
 		}
 		return false;
 	})

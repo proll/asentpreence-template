@@ -1157,6 +1157,16 @@ header {
   display: none;
   text-align: center;
 }
+.galleryadmin-overlay__add {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  font-size: 0;
+  line-height: 0;
+  z-index: 2;
+}
 .galleryadmin-overlay__close {
   display: block;
   position: absolute;
@@ -1166,28 +1176,6 @@ header {
   font-size: 0;
   line-height: 0;
   z-index: 2;
-}
-.galleryadmin-overlay__prev {
-  position: absolute;
-  top: 50%;
-  margin-top: -49px;
-  padding: 0 20px;
-  left: 0;
-  font-size: 0;
-  line-height: 0;
-  z-index: 2;
-  cursor: pointer;
-}
-.galleryadmin-overlay__next {
-  position: absolute;
-  top: 50%;
-  margin-top: -49px;
-  padding: 0 20px;
-  right: 0;
-  font-size: 0;
-  line-height: 0;
-  z-index: 2;
-  cursor: pointer;
 }
 .galleryadmin-overlay__cont {
   position: relative;

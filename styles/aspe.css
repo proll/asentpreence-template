@@ -487,6 +487,7 @@ header {
   font-size: 0;
   line-height: 0;
   z-index: 2;
+  cursor: pointer;
 }
 .overlay__next {
   position: absolute;
@@ -497,6 +498,7 @@ header {
   font-size: 0;
   line-height: 0;
   z-index: 2;
+  cursor: pointer;
 }
 .overlay__slides-cont {
   overflow: hidden;
@@ -506,6 +508,9 @@ header {
   box-sizing: border-box;
   padding: 0;
   height: 100%;
+}
+.loading.overlay__slides-cont {
+  background: url(/assets/ani/spinner.gif) 50% 50% no-repeat;
 }
 .overlay__slides {
   font-size: 0;

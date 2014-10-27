@@ -2,14 +2,14 @@ $(function() {
 	var $overlay = $('.overlay'),
 		$body = $('body'),
 		$window = $(window);
-	$overlay.find('.overlay__close').on('touchstart click', function(e) {
-			if(e && e.preventDefault) {
-				e.preventDefault();
-			}
-			$body.toggleClass('overlay-visible', false);
-			return false;
-		}
-	);
+	// $overlay.find('.overlay__close').on('touchstart click', function(e) {
+	// 		if(e && e.preventDefault) {
+	// 			e.preventDefault();
+	// 		}
+	// 		$body.toggleClass('overlay-visible', false);
+	// 		return false;
+	// 	}
+	// );
 
 	$('.collection__item-mark-a').on('touchstart click', function(e) {
 			if(e && e.preventDefault) {
@@ -128,4 +128,129 @@ $(function() {
 		// $window.on('resize', _.throttle(_.bind(positionMark, this), 500));
 
 	}
+
+	// we counts on this is a product carousel
+	var ProductGallery = function () {
+		var $overlay,
+			$slides_cont,
+			$slides,
+			num = 0,
+			count = 0,
+			slider,
+			href = '',
+			jqxhr;
+
+		function init(new_href) {
+			if(!$overlay) {
+				$overlay = $('<div  class="overlay"/>')
+				$overlay.html(
+					'<div class="overlay__slides-cont"></div'+
+					'<a href="close" class="overlay__close"><i class="i i-close"></i></a>'+
+					'<span href="prev" class="overlay__prev"><i class="i i-al"></i></span>'+
+					'<span href="next" class="overlay__next"><i class="i i-ar"></i></span>');
+				$overlay.find('.overlay__close').on('.touchstart click', _.bind(hidePopup, this));
+				$slides_cont = $overlay.find('.overlay__slides-cont');
+				$body.append($overlay);
+			}
+			if(new_href !== href) {
+				href = new_href;
+				loadPopup(href);
+			}
+			showPopup();
+			// activateSwiper();
+		}
+		function showPopup(e) {
+			if(e && e.preventDefault) {
+				e.preventDefault();
+			}
+			$body.toggleClass('overlay-visible', true);
+			return false;
+		}
+
+		function hidePopup(e) {
+			if(e && e.preventDefault) {
+				e.preventDefault();
+			}
+			$body.toggleClass('overlay-visible', false);
+			return false;
+		}
+
+		function loadPopup(href) {
+			$slides_cont.toggleClass('loading', true);
+			$slides_cont.html('');
+
+			if(jqxhr) jqxhr.abort();
+			jqxhr = 
+				$.get(href)
+					.done(function(result) {
+						$slides_cont.html(result);
+						$slides = $slides_cont.find('.overlay__slide');
+
+						num = 0;
+						count = $slides.length;
+
+						activateSwiper();
+					})
+					.fail(function() {
+					})
+					.always(function() {
+						$slides_cont.toggleClass('loading', false);
+					});
+		}
+
+
+		function toggleSlide(num) {
+			if(slider) {
+				slider.slide(num, 400);
+			}
+		}
+
+		function swipeEnd(index, el) {
+			num = index;
+		}
+
+		function activateSwiper () {
+			this.slider =  new Swipe($slides_cont.get(0), {
+				startSlide: num,
+				speed: 400,
+				continuous: 	false,
+				disableScroll: false,
+				stopPropagation: false,
+				callback: _.bind(swipeEnd, this)
+				// transitionEnd: function(index, elem) {}
+			});
+
+			$overlay.find('.overlay__prev', _.bind(prevSlide, this))
+			$overlay.find('.overlay__next', _.bind(nextSlide, this))
+		}
+
+		function prevSlide() {
+			if((num - 1) >= 0) {
+				num--;
+			}
+			toggleSlide(num);
+		}
+
+		function nextSlide() {
+			if((num + 1) < count) {
+				num++;
+			}
+			toggleSlide(num);
+		}
+
+		return {
+			init: init
+		}
+	}
+
+
+	var pg = new ProductGallery();
+	$('[data-target=popup]').on('touchstart click', function(e) {
+		e.preventDefault();
+		var href = $(e.currentTarget).attr('href');
+		pg.init(href);
+		return false;
+	})
+
+
 })

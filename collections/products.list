@@ -1,20 +1,13 @@
-<div class="overlay">
-	<div class="overlay__slides-cont">
-		<div class="overlay__slides">
-			{.repeated section items}
-			<div data-id="{urlId}" class="overlay__slide"{.section assetUrl} style="background-image:url({@})"{.end}>
-				{.section title}
-				<h2>{@}</h2>
-				{.end}
-				<span class="overlay__desc">
-					{.section excerpt}<h3 class="overlay__desc-h">{@}</h3>{.end}
-					{.section body}<span class="overlay__desc-misc">{@}</span>{.end}
-				</span>
-			</div>
-			{.end}
-		</div>
+<div class="overlay__slides">
+	{.repeated section items}
+	<div data-id="{urlId}" class="overlay__slide"{.section assetUrl} style="background-image:url({@})"{.end}>
+		{.section title}
+		<h2>{@}</h2>
+		{.end}
+		<span class="overlay__desc">
+			{.section excerpt}<h3 class="overlay__desc-h">{@}</h3>{.end}
+			{.section body}<span class="overlay__desc-misc">{@}</span>{.end}
+		</span>
 	</div>
-	<a href="close" class="overlay__close"><i class="i i-close"></i></a>
-	<a href="prev" class="overlay__prev"><i class="i i-al"></i></a>
-	<a href="next" class="overlay__next"><i class="i i-ar"></i></a>
+	{.end}
 </div>

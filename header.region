@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 {.end}
 {squarespace-headers}
-
+<squarespace:script src="vendor/jquery/jquery.1.11.1.js" combo="true" />
 </head>
 <body class="body__page-{.section collection}{urlId}{.end}">
 

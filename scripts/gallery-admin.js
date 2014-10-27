@@ -8,6 +8,7 @@ $(function() {
 			$cont,
 			slider,
 			href = '',
+			image = '',
 			description = '',
 			jqxhr;
 
@@ -22,6 +23,7 @@ $(function() {
 				$body.append($overlay);
 			}
 
+			image = img_url;
 			description = descr;
 
 			if(new_href !== href) {

@@ -1221,6 +1221,7 @@ header {
   background-size: cover;
   width: 42px;
   height: 42px;
+  z-index: -1;
 }
 .galleryadmin-overlay__item-thumb i {
   vertical-align: top;

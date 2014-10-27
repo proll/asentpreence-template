@@ -220,8 +220,8 @@ $(function() {
 				// transitionEnd: function(index, elem) {}
 			});
 
-			$overlay.find('.overlay__prev', _.bind(prevSlide, this))
-			$overlay.find('.overlay__next', _.bind(nextSlide, this))
+			$overlay.find('.overlay__prev').on('touchstart click', _.bind(prevSlide, this))
+			$overlay.find('.overlay__next').on('touchstart click', _.bind(nextSlide, this))
 		}
 
 		function prevSlide() {

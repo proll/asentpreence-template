@@ -78,7 +78,7 @@ $(function() {
 		}
 
 		function addItem() {
-			if(num+1 < count) {
+			if(num < count) {
 				var $item = $(item_template).appendTo($cont);
 				$item.data('id', items_arr[num].id);
 				$item.find('.galleryadmin-overlay__item-thumb').css({

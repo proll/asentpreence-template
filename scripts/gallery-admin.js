@@ -110,6 +110,7 @@ $(function() {
 					}
 				}
 				items_arr = new_items_arr;
+				count = items_arr.length;
 			}
 		}
 

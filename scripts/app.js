@@ -242,13 +242,55 @@ $(function() {
 		}
 	}
 
+
+	var ItemMark = function() {
+		var mark_template = '' +
+		'<div class="collection__item-mark" style="top:{{top}}%; left:{{left}}%">' + 
+			'<a href="{{href}}" data-id="{{id}}" class="collection__item-mark-a"><i class="i i-plus"></i></a>'+
+		'</div>';
+		function init($item) {
+			var $item_body,
+				marks,
+				t='';
+			if($item.length) {
+				$item_body = $item.find('.collection__grid-itm-body');
+				if($item_body.length && !!$item_body.text()) {
+					marks = JSON.parse($item_body.text());
+					_.forEach(marks, function(mark) {
+						if(!!mark.id) {
+							t = mark_template
+									.replace('{{href}}', $item.data('href'))
+									.replace('{{id}}', mark.id)
+									.replace('{{top}}', mark.top*100)
+									.replace('{{left}}', mark.left*100)
+							$item.append(t);
+						}
+					})
+				}
+
+			}
+		}
+
+		return {
+			init: init
+		}
+	}
+
+	_.forEach($('.collection__grid-itm'), function(item) {
+		var $item = $(item);
+		if(!!$item.data('href')) {
+			new ItemMark($item);
+		}
+	})
+
 	var pg = new ProductGallery();
-	$('[data-target=popup]').on('touchstart click', function(e) {
+	$('.collection__item-mark-a').on('touchstart click', function(e) {
 		e.preventDefault();
-		var href = $(e.currentTarget).attr('href');
-		pg.init(href);
+		var $mark = $(e.currentTarget);
+		pg.init($mark.attr('href'), $mark.data('id'));
 		return false;
 	})
+
 
 
 })

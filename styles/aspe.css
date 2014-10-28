@@ -1063,6 +1063,9 @@ header {
   position: relative;
   overflow: hidden;
 }
+.collection__grid-itm-body {
+  display: none;
+}
 .collection__grid-itm-img {
   width: 100%;
   height: auto;

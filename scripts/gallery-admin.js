@@ -106,7 +106,7 @@ $(function() {
 			if(!!old_items_arr && old_items_arr.length) {
 				for (var i = 0; i < items_arr.length; i++) {
 					item = _.find(old_items_arr, {id: items_arr[i].id})
-					if(!!item && !_.isEmpty(item.top) && !_.isEmpty(item.left)) {
+					if(!!item && !!item.id) {
 						renderItem(items_arr[i], item.top, item.left)
 					} else {
 						new_items_arr.push(items_arr[i]);

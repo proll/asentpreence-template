@@ -1188,7 +1188,7 @@ header {
   top: 90px;
   left: 135px;
   padding: 29px;
-  z-index: 2;
+  z-index: 200;
   background: #ffffff;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;

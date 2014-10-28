@@ -116,10 +116,12 @@ $(function() {
 		function renderItem(item_obj, left, top) {
 			var $item = $(item_template).appendTo($cont);
 			$item.data('id', item_obj.id);
-			$item.find('.galleryadmin-overlay__item-thumb').css({
-				'background-image': 'url(' + item_obj.assetUrl + '?format=100w)',
+			$item.css({
 				left: left*100 + '%',
 				top: top*100 + '%'
+			})
+			$item.find('.galleryadmin-overlay__item-thumb').css({
+				'background-image': 'url(' + item_obj.assetUrl + '?format=100w)'
 			});
 			$item.draggable();
 		}
@@ -140,6 +142,7 @@ $(function() {
 				});
 			})
 
+			console.log(result_arr)
 			return result_arr;
 		}
 
@@ -150,7 +153,7 @@ $(function() {
 			var $this = $(e.currentTarget);
 			$overlay.toggleClass('code');
 			$this.find('textarea')
-				.val(generateCode())
+				.val(JSON.stringify(generateCode()))
 				.click();
 			return false;
 		}

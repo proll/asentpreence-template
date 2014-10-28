@@ -71,7 +71,7 @@ $(function() {
 			jqxhr = 
 				$.getJSON(href)
 					.done(function(result) {
-						$cont.html('<img class="galleryadmin-overlay__img" src="' + image + '">');
+						$cont.html('<img class="galleryadmin-overlay__img" src="' + image + '?format=750w">');
 						items_arr = result.items;
 						num = 0;
 						count = items_arr.length;

@@ -381,17 +381,17 @@ BODY {
   overflow: auto;
 }
 .i {
-  background: url("/assets/sprites/i-e3dbf.png") no-repeat 0 0;
+  background: url("/assets/sprites/i-8642a.png") no-repeat 0 0;
   vertical-align: text-top;
   display: inline-block;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5) {
   .i {
-    background: url("/assets/sprites/i-2x-e3dbf.png") no-repeat 0 0;
-    -webkit-background-size: 253px 491px;
-    -moz-background-size: 253px 491px;
-    -o-background-size: 253px 491px;
-    background-size: 253px 491px;
+    background: url("/assets/sprites/i-2x-8642a.png") no-repeat 0 0;
+    -webkit-background-size: 253px 540px;
+    -moz-background-size: 253px 540px;
+    -o-background-size: 253px 540px;
+    background-size: 253px 540px;
     vertical-align: text-top;
     display: inline-block;
   }
@@ -416,20 +416,25 @@ BODY {
   height: 64px;
   background-position: 0px -263px;
 }
+.i-code {
+  width: 63px;
+  height: 48px;
+  background-position: 0px -328px;
+}
 .i-logo {
   width: 253px;
   height: 56px;
-  background-position: 0px -328px;
+  background-position: 0px -377px;
 }
 .i-menu {
   width: 61px;
   height: 57px;
-  background-position: 0px -385px;
+  background-position: 0px -434px;
 }
 .i-plus {
   width: 48px;
   height: 48px;
-  background-position: 0px -443px;
+  background-position: 0px -492px;
 }
 /* Blocks */
 header {
@@ -1167,6 +1172,54 @@ header {
   line-height: 0;
   z-index: 2;
 }
+.galleryadmin-overlay__code {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 106px;
+  padding: 29px;
+  font-size: 0;
+  line-height: 0;
+  z-index: 2;
+}
+.galleryadmin-overlay__code-cont {
+  display: none;
+  position: absolute;
+  top: 106px;
+  left: 106px;
+  padding: 29px;
+  z-index: 2;
+  background: #ffffff;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+.galleryadmin-overlay__code-cont textarea {
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  resize: none;
+  overflow: auto;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  width: 262px;
+  height: 240px;
+  color: #000000;
+  font-size: 14px;
+  line-height: 1.4;
+  font-family: Helvetica, Arial, sans-serif;
+  text-align: left;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.code .galleryadmin-overlay__code-cont {
+  display: block;
+}
 .galleryadmin-overlay__close {
   display: block;
   position: absolute;
@@ -1198,6 +1251,8 @@ header {
   top: 50%;
   left: 50%;
   z-index: 3;
+  font-size: 0;
+  line-height: 0;
 }
 .galleryadmin-overlay__item-inner {
   position: relative;

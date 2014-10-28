@@ -2,5 +2,4 @@ sftp-config.json
 presets/default.preset
 .DS_Store
 /node_modules
-/node_tasks
 

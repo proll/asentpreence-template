@@ -1236,7 +1236,6 @@ header {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
-  height: 100%;
   display: inline-block;
   overflow: auto;
 }

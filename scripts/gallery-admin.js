@@ -150,9 +150,8 @@ $(function() {
 			if(e && e.preventDefault) {
 				e.preventDefault()
 			}
-			var $this = $(e.currentTarget);
 			$overlay.toggleClass('code');
-			$this.find('textarea')
+			$overlay.find('textarea')
 				.val(JSON.stringify(generateCode()))
 				.click();
 			return false;

@@ -279,7 +279,7 @@ $(function() {
 	_.forEach($('.collection__grid-itm'), function(item) {
 		var $item = $(item);
 		if(!!$item.data('href')) {
-			new ItemMark($item);
+			(new ItemMark()).init($item);
 		}
 	})
 

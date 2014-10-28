@@ -49,6 +49,7 @@ $(function() {
 				e.preventDefault();
 			}
 			$body.toggleClass('galleryadmin-overlay-visible', true);
+			$overlay.toggleClass('code', false);
 			return false;
 		}
 

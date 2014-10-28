@@ -117,7 +117,7 @@ $(function() {
 			}
 		}
 
-		function renderItem(item_obj, left, top) {
+		function renderItem(item_obj, top, left) {
 			var $item = $(item_template).appendTo($cont);
 			$item.data('id', item_obj.id);
 			$item.css({

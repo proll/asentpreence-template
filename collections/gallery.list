@@ -1,11 +1,8 @@
 <section class="collection__section">
   <ul class="collection__grid">
     {.repeated section items}
-    <li class="collection__grid-itm">
-
-    {.section clickthroughUrl}<a href="{@}" data-target="popup">{.end}
+    <li class="collection__grid-itm" data-href="{clickthroughUrl}" data-target="popup" data-crosses="{description}">
         <img src="{assetUrl}" alt="{.section title}{@}{.end}" class="collection__grid-itm-img">
-      {.section clickthroughUrl}</a>{.end}
     </li>
     {.end}
   </ul>

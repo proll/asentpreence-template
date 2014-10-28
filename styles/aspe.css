@@ -1230,6 +1230,10 @@ header {
   line-height: 0;
   z-index: 2;
 }
+.galleryadmin-overlay__cont-out {
+  overflow: auto;
+  height: 100%;
+}
 .galleryadmin-overlay__cont {
   position: relative;
   -webkit-box-sizing: border-box;
@@ -1237,7 +1241,6 @@ header {
   box-sizing: border-box;
   padding: 0;
   display: inline-block;
-  overflow: auto;
 }
 .loading.galleryadmin-overlay__cont {
   background: url(/assets/ani/spinner.gif) 50% 50% no-repeat;

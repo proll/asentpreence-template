@@ -20,7 +20,9 @@ $(function() {
 			if(!$overlay) {
 				$overlay = $('<div class="galleryadmin-overlay"/>')
 				$overlay.append(
-					'<div class="galleryadmin-overlay__cont"></div>'+
+					'<div class="galleryadmin-overlay__cont-out">'+
+						'<div class="galleryadmin-overlay__cont"></div>'+
+					'</div>'+
 					'<a href="add" class="galleryadmin-overlay__add"><i class="i i-plus"></i></a>'+
 					'<a href="code" class="galleryadmin-overlay__code"><i class="i i-code"></i></a>'+
 					'<div class="galleryadmin-overlay__code-cont"><textarea></textarea></div>'+

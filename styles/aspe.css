@@ -1185,8 +1185,8 @@ header {
 .galleryadmin-overlay__code-cont {
   display: none;
   position: absolute;
-  top: 106px;
-  left: 106px;
+  top: 90px;
+  left: 135px;
   padding: 29px;
   z-index: 2;
   background: #ffffff;
@@ -1207,7 +1207,7 @@ header {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
-  width: 262px;
+  width: 320px;
   height: 240px;
   color: #000000;
   font-size: 14px;

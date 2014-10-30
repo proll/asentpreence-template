@@ -3,7 +3,7 @@
     {.repeated section items}
     <li class="collection__grid-itm" data-href="{clickthroughUrl}" data-target="popup">
     	{.section body}<div class="collection__grid-itm-body">{@}</div>{.end}
-        <img src="{assetUrl}?format=500w" data-srcset="{assetUrl}?format=100w 100w, {assetUrl}?format=500w 500w,{assetUrl}?format=750w 750w,{assetUrl} 1536w" alt="{.section title}{@}{.end}" class="collection__grid-itm-img lazyload">
+        <img src="{assetUrl}?format=500w" data-srcset="{assetUrl}?format=100w 100w, {assetUrl}?format=500w 500w,{assetUrl}?format=750w 750w,{assetUrl} 1536w" alt="{.section title}{@}{.end}" class="collection__grid-itm-img">
     </li>
     {.end}
   </ul>

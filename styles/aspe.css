@@ -621,6 +621,9 @@ header {
   font-weight: normal;
   text-transform: uppercase;
 }
+.dark-bg.overlay {
+  background: #000000;
+}
 .dark-bg .i-close {
   width: 64px;
   height: 64px;

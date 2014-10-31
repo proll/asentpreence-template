@@ -1,6 +1,6 @@
 <div class="overlay__slides">
 	{.repeated section items}
-	<div data-id="{id}" class="overlay__slide"{.section assetUrl} style="background-image:url({@})"{.end}{.section items} data-bg="{items[0].colorData.suggestedBgColor}"{.end}>
+	<div data-id="{id}" class="overlay__slide"{.section assetUrl} style="background-image:url({@})"{.end}{.section items}{.repeated section items} data-bg="{colorData.suggestedBgColor}"{.end}{.end}>
 		{.section title}
 		<h2>{@}</h2>
 		{.end}

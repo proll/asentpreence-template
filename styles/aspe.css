@@ -621,22 +621,22 @@ header {
   font-weight: normal;
   text-transform: uppercase;
 }
-.black-bg .i-close {
+.dark-bg .i-close {
   width: 64px;
   height: 64px;
   background-position: 0px -461px;
 }
-.black-bg .i-al {
+.dark-bg .i-al {
   width: 52px;
   height: 98px;
   background-position: 0px -99px;
 }
-.black-bg .i-ar {
+.dark-bg .i-ar {
   width: 52px;
   height: 98px;
   background-position: 0px -297px;
 }
-.black-bg .overlay__slide {
+.dark-bg .overlay__slide {
   color: #ffffff;
 }
 .menu-visible {

@@ -1,7 +1,7 @@
 {
   "name": "i-2x",
-  "checksum": "8642a4f9ad1590e5ead50346c5491b49",
-  "shortsum": "8642a",
+  "checksum": "54ec46399ba23e03c4b6541b6d980a0a",
+  "shortsum": "54ec4",
   "images": [
     {
       "name": "al",
@@ -13,13 +13,31 @@
       "positionY": 0
     },
     {
+      "name": "al_w",
+      "filename": "al_w.png",
+      "checksum": "44c8f2cea40fd14342a5a41a22b0274c",
+      "width": 104,
+      "height": 196,
+      "positionX": 0,
+      "positionY": 198
+    },
+    {
       "name": "ar",
       "filename": "ar.png",
       "checksum": "022223a2e16bfe1e5c645c99e80a8018",
       "width": 104,
       "height": 196,
       "positionX": 0,
-      "positionY": 198
+      "positionY": 396
+    },
+    {
+      "name": "ar_w",
+      "filename": "ar_w.png",
+      "checksum": "df57370035b0a1fcbdc3ada1b0fa1959",
+      "width": 104,
+      "height": 196,
+      "positionX": 0,
+      "positionY": 594
     },
     {
       "name": "close",
@@ -28,7 +46,16 @@
       "width": 128,
       "height": 128,
       "positionX": 0,
-      "positionY": 396
+      "positionY": 792
+    },
+    {
+      "name": "close_w",
+      "filename": "close_w.png",
+      "checksum": "2972233b9a56352d35f6dcc09c4ae7a7",
+      "width": 128,
+      "height": 128,
+      "positionX": 0,
+      "positionY": 922
     },
     {
       "name": "closew",
@@ -37,7 +64,7 @@
       "width": 128,
       "height": 128,
       "positionX": 0,
-      "positionY": 526
+      "positionY": 1052
     },
     {
       "name": "code",
@@ -46,7 +73,7 @@
       "width": 126,
       "height": 96,
       "positionX": 0,
-      "positionY": 656
+      "positionY": 1182
     },
     {
       "name": "logo",
@@ -55,7 +82,7 @@
       "width": 505,
       "height": 112,
       "positionX": 0,
-      "positionY": 754
+      "positionY": 1280
     },
     {
       "name": "menu",
@@ -64,7 +91,7 @@
       "width": 121,
       "height": 113,
       "positionX": 0,
-      "positionY": 868
+      "positionY": 1394
     },
     {
       "name": "plus",
@@ -73,7 +100,7 @@
       "width": 96,
       "height": 96,
       "positionX": 0,
-      "positionY": 983
+      "positionY": 1509
     }
   ]
 }

@@ -88,6 +88,7 @@
 				.background-size(auto 100%);
 
 				color: @black;
+				.transition(color .3s);
 
 				h2 {
 					font-size: 18px;
@@ -95,6 +96,7 @@
 					font-weight: normal;
 					margin: 0;
 					padding: 109px+40px 40px 0;
+					.transition(color .3s);
 				}
 
 				.overlay__desc {
@@ -109,6 +111,7 @@
 						line-height: 24px;
 						font-weight: normal;
 						margin: 0 0 15px;
+						.transition(color .3s);
 						p {
 							display: inline;
 							padding: 0;
@@ -121,6 +124,7 @@
 						line-height: 14px;
 						font-family: 'Courier New', Courier, sans;
 						margin: 0;
+						.transition(color .3s);
 						p,
 						div {
 							padding: 0;
@@ -133,3 +137,22 @@
 							text-transform: uppercase;
 						}
 			}
+
+
+.black-bg {
+	.i-close {
+		.i-close_w;
+	}
+
+	.i-al {
+		.i-al_w;
+	}
+
+	.i-ar {
+		.i-ar_w;
+	}
+
+	.overlay__slide {
+		color: @white;
+	}
+}

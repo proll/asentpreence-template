@@ -164,6 +164,12 @@ function Swipe(container, options) {
 
 		if (!style) return;
 
+		style.webkitTransitionProperty =
+		style.MozTransitionProperty =
+		style.msTransitionProperty =
+		style.OTransitionProperty =
+		style.transitionProperty = 'all';
+
 		style.webkitTransitionDuration =
 		style.MozTransitionDuration =
 		style.msTransitionDuration =

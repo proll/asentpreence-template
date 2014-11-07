@@ -1,9 +1,9 @@
-## Программные зависимости
+## Dependencies
 - nodejs+npm
 - imagemagick
 
-## Зависимости js модулей nodejs
-В папке с проектом сделать npm install
+## Install
+npm install
 
-## Инструменты
-Рекомендуется использовать LiveReload он умеет компилировать less по сохварению
+## Tools
+Highly recomended using of LiveReload or other tool compiling LESS

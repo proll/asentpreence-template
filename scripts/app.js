@@ -94,7 +94,7 @@ $(function() {
 
 		function loadPopup(hrefs) {
 			$slides_cont.toggleClass('loading', true);
-			$slides_cont.html('');
+			$slides_cont.find('.overlay__slides').html('');
 
 			if(jqxhr) jqxhr.abort();
 

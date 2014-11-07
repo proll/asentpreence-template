@@ -149,7 +149,7 @@ $(function() {
 		function activateSwiper () {
 			slider =  new Swipe($slides_cont.get(0), {
 				startSlide: num,
-				speed: 400,
+				speed: 600,
 				continuous: 	false,
 				disableScroll: false,
 				stopPropagation: false,

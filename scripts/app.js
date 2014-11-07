@@ -106,7 +106,9 @@ $(function() {
 			jqxhr = 
 				$.when.apply($, ajax_objects)
 					.done(function(results) {
+						console.log(results)
 						_.forEach(results, function(result) {
+							console.log(result)
 							$slides_cont.find('.overlay__slides').html(result[0]);
 							$slides = $slides_cont.find('.overlay__slide');
 

@@ -41,8 +41,9 @@ $(function() {
 			num = 0,
 			count = 0,
 			slider,
-			href = '',
-			jqxhr;
+			hrefs = [],
+			jqxhr,
+			first_open = true;
 
 		function init(new_href, prod_id) {
 			if(!prod_id) {
@@ -53,20 +54,21 @@ $(function() {
 			if(!$overlay) {
 				$overlay = $('<div class="overlay dark-bg"/>')
 				$overlay.append(
-					'<div class="overlay__slides-cont"></div>'+
+					'<div class="overlay__slides-cont"><div class="overlay__slides"></div></div>'+
 					'<a href="close" class="overlay__close"><i class="i i-close"></i></a>'+
 					'<span href="prev" class="overlay__prev"><i class="i i-al"></i></span>'+
 					'<span href="next" class="overlay__next"><i class="i i-ar"></i></span>');
 				$overlay.find('.overlay__close').on('.touchstart click', _.bind(hidePopup, this));
 				$overlay.find('.overlay__prev').on('touchstart click', _.bind(prevSlide, this))
 				$overlay.find('.overlay__next').on('touchstart click', _.bind(nextSlide, this))
-				$slides_cont = $overlay.find('.overlay__slides-cont');
+				$slides_cont = $overlay.find('.overlay__slides');
 				$body.append($overlay);
 			}
-			if(new_href !== href) {
+			if(first_open) {
 				$slides = [];
-				href = new_href;
-				loadPopup(href);
+				hrefs = new_hrefs;
+				first_open = false;
+				loadPopup(hrefs);
 			} else {
 				num = getNumFromID(product_id);
 				toggleSlide(num);
@@ -90,22 +92,29 @@ $(function() {
 			return false;
 		}
 
-		function loadPopup(href) {
+		function loadPopup(hrefs) {
 			$slides_cont.toggleClass('loading', true);
 			$slides_cont.html('');
 
 			if(jqxhr) jqxhr.abort();
+
+			var ajax_objects = [];
+			_.forEach(hrefs, function(href) {
+				ajax_objects.push($.get(href));
+			})
+
 			jqxhr = 
-				$.get(href)
-					.done(function(result) {
-						$slides_cont.html(result);
-						$slides = $slides_cont.find('.overlay__slide');
+				$.when.apply($, ajax_objects)
+					.done(function(results) {
+						_.forEach(results, function(result) {
+							$slides_cont.html(result[0]);
+							$slides = $slides_cont.find('.overlay__slide');
 
+							num = getNumFromID(product_id);
+							count = $slides.length;
 
-						num = getNumFromID(product_id);
-						count = $slides.length;
-
-						activateSwiper();
+							activateSwiper();
+						})
 					})
 					.fail(function() {
 					})
@@ -210,14 +219,16 @@ $(function() {
 		}
 	})
 
-	var pg = new ProductGallery();
-	$('.collection__item-mark-a').on('touchstart click', function(e) {
+	var pg = new ProductGallery(),
+		$marks = $('.collection__item-mark-a'),
+		hrefs = _.map( $marks, function(mark) {
+			return $(mark).attr('href');
+		});
+
+	$marks.on('touchstart click', function(e) {
 		e.preventDefault();
 		var $mark = $(e.currentTarget);
-		pg.init($mark.attr('href'), $mark.data('id'));
+		pg.init(hrefs, $mark.data('id'));
 		return false;
 	})
-
-
-
 })

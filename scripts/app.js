@@ -221,9 +221,9 @@ $(function() {
 
 	var pg = new ProductGallery(),
 		$marks = $('.collection__item-mark-a'),
-		hrefs = _.map( $marks, function(mark) {
+		hrefs = _.uniq(_.map( $marks, function(mark) {
 			return $(mark).attr('href');
-		});
+		}));
 
 	$marks.on('touchstart click', function(e) {
 		e.preventDefault();

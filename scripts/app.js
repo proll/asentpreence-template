@@ -107,7 +107,7 @@ $(function() {
 				$.when.apply($, ajax_objects)
 					.done(function() {
 						_.forEach(arguments, function(result) {
-							$slides_cont.find('.overlay__slides').html(result[0]);
+							$slides_cont.find('.overlay__slides').append(result[0]);
 							$slides = $slides_cont.find('.overlay__slide');
 
 							num = getNumFromID(product_id);

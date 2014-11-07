@@ -150,7 +150,7 @@ $(function() {
 			slider =  new Swipe($slides_cont.get(0), {
 				startSlide: num,
 				speed: 400,
-				continuous: 	false,
+				continuous: 	true,
 				disableScroll:  false,
 				stopPropagation: false,
 				callback: _.bind(swipeEnd, this)

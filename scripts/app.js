@@ -149,9 +149,9 @@ $(function() {
 		function activateSwiper () {
 			slider =  new Swipe($slides_cont.get(0), {
 				startSlide: num,
-				speed: 600,
+				speed: 400,
 				continuous: 	false,
-				disableScroll: false,
+				disableScroll:  false,
 				stopPropagation: false,
 				callback: _.bind(swipeEnd, this)
 				// transitionEnd: function(index, elem) {}

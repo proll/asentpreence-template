@@ -550,6 +550,10 @@ header {
   padding: 0;
   height: 100%;
 }
+.touch .overlay__prev,
+.touch .overlay__next {
+  width: auto;
+}
 .loading.overlay__slides-cont {
   background: url(/assets/ani/spinner.gif) 50% 50% no-repeat;
 }

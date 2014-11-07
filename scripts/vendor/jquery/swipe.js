@@ -168,7 +168,7 @@ function Swipe(container, options) {
 		style.MozTransitionDuration =
 		style.msTransitionDuration =
 		style.OTransitionDuration =
-		style.transitionDuration = speed + 'ms';
+		style.transitionDuration = 'all ' + speed + 'ms';
 
 		style.webkitTransform = 'translate(' + dist + 'px,0)' + 'translateZ(0)';
 		style.msTransform =

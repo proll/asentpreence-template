@@ -45,7 +45,7 @@ $(function() {
 			jqxhr,
 			first_open = true;
 
-		function init(new_href, prod_id) {
+		function init(new_hrefs, prod_id) {
 			if(!prod_id) {
 				prod_id = 0
 			}

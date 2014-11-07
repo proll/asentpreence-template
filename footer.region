@@ -6,6 +6,7 @@
 <squarespace:script src="vendor/lodash.js" combo="true" />
 <squarespace:script src="vendor/jquery/swipe.js" combo="true" />
 <squarespace:script src="app.js" combo="true" />
+<squarespace:script src="vendor/respimage.min.js" async=""/>
 <squarespace:script src="vendor/lazysizes.min.js" async=""/>
 
 {.if template.mobileStylesEnabled}{.or}

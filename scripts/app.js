@@ -162,6 +162,8 @@ $(function() {
 		function prevSlide() {
 			if((num - 1) >= 0) {
 				num--;
+			} else {
+				num = count - 1;
 			}
 			toggleSlide(num);
 		}
@@ -169,6 +171,8 @@ $(function() {
 		function nextSlide() {
 			if((num + 1) < count) {
 				num++;
+			} else {
+				num = 0;
 			}
 			toggleSlide(num);
 		}

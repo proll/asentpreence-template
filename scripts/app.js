@@ -61,7 +61,7 @@ $(function() {
 				$overlay.find('.overlay__close').on('.touchstart click', _.bind(hidePopup, this));
 				$overlay.find('.overlay__prev').on('touchstart click', _.bind(prevSlide, this))
 				$overlay.find('.overlay__next').on('touchstart click', _.bind(nextSlide, this))
-				$slides_cont = $overlay.find('.overlay__slides');
+				$slides_cont = $overlay.find('.overlay__slides-cont');
 				$body.append($overlay);
 			}
 			if(first_open) {
@@ -107,7 +107,7 @@ $(function() {
 				$.when.apply($, ajax_objects)
 					.done(function(results) {
 						_.forEach(results, function(result) {
-							$slides_cont.html(result[0]);
+							$slides_cont.find('.overlay__slides').html(result[0]);
 							$slides = $slides_cont.find('.overlay__slide');
 
 							num = getNumFromID(product_id);

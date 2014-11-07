@@ -58,9 +58,9 @@ $(function() {
 					'<a href="close" class="overlay__close"><i class="i i-close"></i></a>'+
 					'<span href="prev" class="overlay__prev"><i class="i i-al"></i></span>'+
 					'<span href="next" class="overlay__next"><i class="i i-ar"></i></span>');
-				$overlay.find('.overlay__close').on('.touchstart click', _.bind(hidePopup, this));
-				$overlay.find('.overlay__prev').on('touchstart click', _.bind(prevSlide, this))
-				$overlay.find('.overlay__next').on('touchstart click', _.bind(nextSlide, this))
+				$overlay.find('.overlay__close').on('click', _.bind(hidePopup, this));
+				$overlay.find('.overlay__prev').on('click', _.bind(prevSlide, this))
+				$overlay.find('.overlay__next').on('click', _.bind(nextSlide, this))
 				$slides_cont = $overlay.find('.overlay__slides-cont');
 				$body.append($overlay);
 			}
@@ -225,7 +225,7 @@ $(function() {
 			return $(mark).attr('href');
 		}));
 
-	$marks.on('touchstart click', function(e) {
+	$marks.on('click', function(e) {
 		e.preventDefault();
 		var $mark = $(e.currentTarget);
 		pg.init(hrefs, $mark.data('id'));

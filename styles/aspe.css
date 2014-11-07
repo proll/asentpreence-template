@@ -539,7 +539,7 @@ header {
   position: absolute;
   top: 50%;
   margin-top: -49px;
-  left: 20px;
+  right: 20px;
 }
 .overlay__slides-cont {
   overflow: hidden;

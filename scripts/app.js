@@ -52,7 +52,8 @@ $(function() {
 			product_id = prod_id;
 
 			if(!$overlay) {
-				$overlay = $('<div class="overlay dark-bg"/>')
+				// $overlay = $('<div class="overlay dark-bg"/>')
+				$overlay = $('<div class="overlay"/>')
 				$overlay.append(
 					'<div class="overlay__slides-cont"><div class="overlay__slides"></div></div>'+
 					'<a href="close" class="overlay__close"><i class="i i-close"></i></a>'+

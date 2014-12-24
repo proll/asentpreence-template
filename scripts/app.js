@@ -107,28 +107,41 @@ $(function() {
 			if(ajax_objects.length>1) {
 				jqxhr = 
 					$.when.apply($, ajax_objects);
+						.done(function() {
+							_.forEach(arguments, function(result) {
+								console.log(result)
+								$slides_cont.find('.overlay__slides').append(result[0]);
+								$slides = $slides_cont.find('.overlay__slide');
+
+								num = getNumFromID(product_id);
+								count = $slides.length;
+
+								activateSwiper();
+							})
+						})
+						.fail(function() {
+						})
+						.always(function() {
+							$slides_cont.toggleClass('loading', false);
+						});
 			} else {
-				jqxhr = $.when(ajax_objects[0]);
+				jqxhr = 
+					$.when(ajax_objects[0])
+						.done(function(result) {
+							$slides_cont.find('.overlay__slides').append(result);
+							$slides = $slides_cont.find('.overlay__slide');
+
+							num = getNumFromID(product_id);
+							count = $slides.length;
+
+							activateSwiper();
+						})
+						.fail(function() {
+						})
+						.always(function() {
+							$slides_cont.toggleClass('loading', false);
+						});
 			}
-			
-			jqxhr
-				.done(function() {
-					_.forEach(arguments, function(result) {
-						console.log(result)
-						$slides_cont.find('.overlay__slides').append(result[0]);
-						$slides = $slides_cont.find('.overlay__slide');
-
-						num = getNumFromID(product_id);
-						count = $slides.length;
-
-						activateSwiper();
-					})
-				})
-				.fail(function() {
-				})
-				.always(function() {
-					$slides_cont.toggleClass('loading', false);
-				});
 		}
 
 

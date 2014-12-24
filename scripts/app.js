@@ -108,6 +108,7 @@ $(function() {
 				$.when.apply($, ajax_objects)
 					.done(function() {
 						_.forEach(arguments, function(result) {
+							console.log(result)
 							$slides_cont.find('.overlay__slides').append(result[0]);
 							$slides = $slides_cont.find('.overlay__slide');
 

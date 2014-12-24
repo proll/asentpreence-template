@@ -104,25 +104,31 @@ $(function() {
 				ajax_objects.push($.get(href));
 			})
 
-			jqxhr = 
-				$.when.apply($, ajax_objects)
-					.done(function() {
-						_.forEach(arguments, function(result) {
-							console.log(result)
-							$slides_cont.find('.overlay__slides').append(result[0]);
-							$slides = $slides_cont.find('.overlay__slide');
+			if(ajax_objects.length>1) {
+				jqxhr = 
+					$.when.apply($, ajax_objects);
+			} else {
+				jqxhr = $.when(ajax_objects[0]);
+			}
+			
+			jqxhr
+				.done(function() {
+					_.forEach(arguments, function(result) {
+						console.log(result)
+						$slides_cont.find('.overlay__slides').append(result[0]);
+						$slides = $slides_cont.find('.overlay__slide');
 
-							num = getNumFromID(product_id);
-							count = $slides.length;
+						num = getNumFromID(product_id);
+						count = $slides.length;
 
-							activateSwiper();
-						})
+						activateSwiper();
 					})
-					.fail(function() {
-					})
-					.always(function() {
-						$slides_cont.toggleClass('loading', false);
-					});
+				})
+				.fail(function() {
+				})
+				.always(function() {
+					$slides_cont.toggleClass('loading', false);
+				});
 		}
 
 

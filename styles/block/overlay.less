@@ -119,13 +119,14 @@
 					line-height: 2;
 					font-weight: normal;
 					margin: 0;
-					padding: 109px+40px 40px 0;
+					padding: (109px+40px-1px)/2 40px 0;
 					.transition(color .3s);
 				}
 
 				.overlay__desc {
 					position: absolute;
-					bottom: 80px-3px;
+					// bottom: 80px-3px;
+					bottom: (80px-2px)/2;
 					left: 40px;
 					right: 40px;
 				}

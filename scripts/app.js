@@ -104,10 +104,16 @@ $(function() {
 				ajax_objects.push($.get(href));
 			})
 
-			if(ajax_objects.length>1) {
-				jqxhr = 
-					$.when.apply($, ajax_objects)
-						.done(function() {
+
+			// crazy thing about 
+			// 
+			// .done(function(arguments)
+			// 
+			jqxhr = 
+				$.when.apply($, ajax_objects)
+					.done(function() {
+
+						if(ajax_objects.length>1) {
 							_.forEach(arguments, function(result) {
 								$slides_cont.find('.overlay__slides').append(result[0]);
 								$slides = $slides_cont.find('.overlay__slide');
@@ -117,16 +123,7 @@ $(function() {
 
 								activateSwiper();
 							})
-						})
-						.fail(function() {
-						})
-						.always(function() {
-							$slides_cont.toggleClass('loading', false);
-						});
-			} else {
-				jqxhr = 
-					$.when(ajax_objects[0])
-						.done(function(result) {
+						} else {
 							$slides_cont.find('.overlay__slides').append(result);
 							$slides = $slides_cont.find('.overlay__slide');
 
@@ -134,13 +131,14 @@ $(function() {
 							count = $slides.length;
 
 							activateSwiper();
-						})
-						.fail(function() {
-						})
-						.always(function() {
-							$slides_cont.toggleClass('loading', false);
-						});
-			}
+						}
+						
+					})
+					.fail(function() {
+					})
+					.always(function() {
+						$slides_cont.toggleClass('loading', false);
+					});
 		}
 
 

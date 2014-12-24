@@ -124,7 +124,7 @@ $(function() {
 								activateSwiper();
 							})
 						} else {
-							$slides_cont.find('.overlay__slides').append(result);
+							$slides_cont.find('.overlay__slides').append(arguments[0]);
 							$slides = $slides_cont.find('.overlay__slide');
 
 							num = getNumFromID(product_id);
@@ -132,7 +132,7 @@ $(function() {
 
 							activateSwiper();
 						}
-						
+
 					})
 					.fail(function() {
 					})

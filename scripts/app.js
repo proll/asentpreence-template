@@ -106,7 +106,7 @@ $(function() {
 
 			if(ajax_objects.length>1) {
 				jqxhr = 
-					$.when.apply($, ajax_objects);
+					$.when.apply($, ajax_objects)
 						.done(function() {
 							_.forEach(arguments, function(result) {
 								console.log(result)

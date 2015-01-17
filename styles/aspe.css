@@ -69,7 +69,7 @@ header{display:block;position:absolute;z-index:2;left:0;right:0;-webkit-transiti
 .header__menu{display:inline-block;padding:18px 20px 0;}
 .header__logo{float:right;padding:18px 20px 0;}
 .overlay-visible{overflow:hidden;}.overlay-visible .overlay{display:block;}
-.overlay{background:#ffffff;position:fixed;top:0;left:0;right:0;bottom:0;z-index:10;display:none;}
+.overlay{background:#ececec;position:fixed;top:0;left:0;right:0;bottom:0;z-index:10;display:none;}
 .overlay__close{display:block;position:absolute;top:0;right:0;padding:20px;font-size:0;line-height:0;z-index:3;}
 .overlay__prev{position:absolute;top:0;bottom:0;padding:0 20px;left:0;width:25%;font-size:0;line-height:0;z-index:2;cursor:pointer;}.overlay__prev .i{position:absolute;top:50%;margin-top:-49px;left:20px;}
 .overlay__next{position:absolute;top:0;bottom:0;width:25%;padding:0 20px;right:0;font-size:0;line-height:0;z-index:2;cursor:pointer;}.overlay__next .i{position:absolute;top:50%;margin-top:-49px;right:20px;}

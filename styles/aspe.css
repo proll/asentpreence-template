@@ -490,7 +490,7 @@ header {
 .body__page-home .header__menu .i-menu_dark,
 .body__page-time\/men .header__menu .i-menu_dark,
 .body__page-time\/women .header__menu .i-menu_dark {
-  display: inline-block;
+  display: none;
 }
 .body__page-home .header__menu .i-menu,
 .body__page-time\/men .header__menu .i-menu,

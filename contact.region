@@ -1,10 +1,10 @@
 <section class="contact__section">
   <div class="contact__section-in">
     {squarespace.main-content}
-    <div class="contact__row">
+    <!--div class="contact__row">
       <span class="contact__social">
       <squarespace:navigation navigationId="socialNav" template="social-navigation" />
       </span>
-    </div>
+    </div-->
   </div>
 </section>

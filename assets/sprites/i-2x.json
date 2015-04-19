@@ -1,7 +1,7 @@
 {
   "name": "i-2x",
-  "checksum": "54ec46399ba23e03c4b6541b6d980a0a",
-  "shortsum": "54ec4",
+  "checksum": "56e27b4a9a82138555b8adc05277223f",
+  "shortsum": "56e27",
   "images": [
     {
       "name": "al",
@@ -94,13 +94,22 @@
       "positionY": 1394
     },
     {
+      "name": "menu_dark",
+      "filename": "menu_dark.png",
+      "checksum": "9d8967bbc2300670a90f8fae54e154b4",
+      "width": 121,
+      "height": 113,
+      "positionX": 0,
+      "positionY": 1509
+    },
+    {
       "name": "plus",
       "filename": "plus.png",
       "checksum": "8dd2c064300907e7551dad7169270805",
       "width": 96,
       "height": 96,
       "positionX": 0,
-      "positionY": 1509
+      "positionY": 1624
     }
   ]
 }

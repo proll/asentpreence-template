@@ -381,17 +381,17 @@ BODY {
   overflow: auto;
 }
 .i {
-  background: url("/assets/sprites/i-54ec4.png") no-repeat 0 0;
+  background: url("/assets/sprites/i-56e27.png") no-repeat 0 0;
   vertical-align: text-top;
   display: inline-block;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5) {
   .i {
-    background: url("/assets/sprites/i-2x-54ec4.png") no-repeat 0 0;
-    -webkit-background-size: 253px 803px;
-    -moz-background-size: 253px 803px;
-    -o-background-size: 253px 803px;
-    background-size: 253px 803px;
+    background: url("/assets/sprites/i-2x-56e27.png") no-repeat 0 0;
+    -webkit-background-size: 253px 860px;
+    -moz-background-size: 253px 860px;
+    -o-background-size: 253px 860px;
+    background-size: 253px 860px;
     vertical-align: text-top;
     display: inline-block;
   }
@@ -446,10 +446,15 @@ BODY {
   height: 57px;
   background-position: 0px -697px;
 }
+.i-menu_dark {
+  width: 61px;
+  height: 57px;
+  background-position: 0px -755px;
+}
 .i-plus {
   width: 48px;
   height: 48px;
-  background-position: 0px -755px;
+  background-position: 0px -812px;
 }
 /* Blocks */
 header {
@@ -478,6 +483,9 @@ header {
 .header__logo {
   float: right;
   padding: 18px 20px 0;
+}
+.header__logo .i-menu {
+  display: none;
 }
 .overlay-visible {
   overflow: hidden;
@@ -710,7 +718,7 @@ header {
   width: 260px;
   z-index: 9;
   left: -260px;
-  border-right: 1px solid #333;
+  border-right: 1px solid #ccc;
   padding: 27px 40px;
 }
 .menu__list,
@@ -1202,12 +1210,12 @@ header {
   font-size: 11px;
   line-height: 14px;
   text-decoration: none;
-  color: #ffffff;
-  border-bottom: 1px solid #ffffff;
+  color: #000000;
+  border-bottom: 1px solid #000000;
 }
 .stockists__col a:hover {
   text-decoration: none;
-  color: #ffffff;
+  color: #000000;
 }
 .stockists__itm {
   margin-bottom: 45px !important;

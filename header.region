@@ -13,7 +13,7 @@
 <body class="body__page-{.section collection}{urlId}{.end}">
 
 <header>
-  <a href="/" class="header__menu"><i class="i i-menu"></i></a>
+  <a href="/" class="header__menu"><i class="i i-menu"></i><i class="i i-menu_dark"></i></a>
   <a href="/" class="header__logo"><i class="i i-logo"></i></a>
 </header>
 

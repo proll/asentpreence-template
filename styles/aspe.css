@@ -480,12 +480,22 @@ header {
   display: inline-block;
   padding: 18px 20px 0;
 }
+.header__menu .i-menu {
+  display: none;
+}
 .header__logo {
   float: right;
   padding: 18px 20px 0;
 }
-.header__logo .i-menu {
-  display: none;
+.body__page-home .header__menu .i-menu_dark,
+.body__page-time\/men .header__menu .i-menu_dark,
+.body__page-time\/women .header__menu .i-menu_dark {
+  display: inline-block;
+}
+.body__page-home .header__menu .i-menu,
+.body__page-time\/men .header__menu .i-menu,
+.body__page-time\/women .header__menu .i-menu {
+  display: inline-block;
 }
 .overlay-visible {
   overflow: hidden;

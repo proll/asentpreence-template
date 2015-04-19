@@ -704,6 +704,7 @@ header {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   background: #000000;
+  color: #ffffff;
   position: fixed;
   top: 0;
   bottom: 0;

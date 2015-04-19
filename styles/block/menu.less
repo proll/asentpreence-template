@@ -21,7 +21,6 @@
 	.transition-tranform(.2s);
 	.box-sizing(border-box);
 	background: @black;
-	color: @white;
 	position: fixed;
 	top: 0;
 	bottom: 0;
@@ -64,7 +63,7 @@
 			}
 
 				.menu__item-a {
-					color: @white;
+					color: @textColor;
 					text-decoration: none;
 					.transition(border-color .2s);
 					border-bottom: 1px solid transparent;
@@ -72,8 +71,8 @@
 					&:active,
 					&:focus,
 					&:hover {
-						color: @white;
+						color: @textColor;
 						text-decoration: none;
-						border-bottom: 1px solid @white;
+						border-bottom: 1px solid @textColor;
 					}
 				}

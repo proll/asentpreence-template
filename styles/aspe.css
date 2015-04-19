@@ -704,7 +704,6 @@ header {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   background: #000000;
-  color: #ffffff;
   position: fixed;
   top: 0;
   bottom: 0;
@@ -742,7 +741,7 @@ header {
   cursor: default;
 }
 .menu__item-a {
-  color: #ffffff;
+  color: #000000;
   text-decoration: none;
   -webkit-transition: border-color 0.2s;
   -moz-transition: border-color 0.2s;
@@ -753,9 +752,9 @@ header {
 .menu__item-a:active,
 .menu__item-a:focus,
 .menu__item-a:hover {
-  color: #ffffff;
+  color: #000000;
   text-decoration: none;
-  border-bottom: 1px solid #ffffff;
+  border-bottom: 1px solid #000000;
 }
 .body__page-home #aspe-container {
   height: 100%;

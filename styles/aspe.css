@@ -381,17 +381,17 @@ BODY {
   overflow: auto;
 }
 .i {
-  background: url("/assets/sprites/i-56e27.png") no-repeat 0 0;
+  background: url("/assets/sprites/i-5d778.png") no-repeat 0 0;
   vertical-align: text-top;
   display: inline-block;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5) {
   .i {
-    background: url("/assets/sprites/i-2x-56e27.png") no-repeat 0 0;
-    -webkit-background-size: 253px 860px;
-    -moz-background-size: 253px 860px;
-    -o-background-size: 253px 860px;
-    background-size: 253px 860px;
+    background: url("/assets/sprites/i-2x-5d778.png") no-repeat 0 0;
+    -webkit-background-size: 253px 917px;
+    -moz-background-size: 253px 917px;
+    -o-background-size: 253px 917px;
+    background-size: 253px 917px;
     vertical-align: text-top;
     display: inline-block;
   }
@@ -441,20 +441,25 @@ BODY {
   height: 56px;
   background-position: 0px -640px;
 }
+.i-logo_dark {
+  width: 253px;
+  height: 56px;
+  background-position: 0px -697px;
+}
 .i-menu {
   width: 61px;
   height: 57px;
-  background-position: 0px -697px;
+  background-position: 0px -754px;
 }
 .i-menu_dark {
   width: 61px;
   height: 57px;
-  background-position: 0px -755px;
+  background-position: 0px -812px;
 }
 .i-plus {
   width: 48px;
   height: 48px;
-  background-position: 0px -812px;
+  background-position: 0px -869px;
 }
 /* Blocks */
 header {
@@ -487,6 +492,9 @@ header {
   float: right;
   padding: 18px 20px 0;
 }
+.header__logo .i-logo {
+  display: none;
+}
 .body__page-home .header__menu .i-menu_dark,
 .body__page-time\/men .header__menu .i-menu_dark,
 .body__page-time\/women .header__menu .i-menu_dark {
@@ -495,6 +503,16 @@ header {
 .body__page-home .header__menu .i-menu,
 .body__page-time\/men .header__menu .i-menu,
 .body__page-time\/women .header__menu .i-menu {
+  display: inline-block;
+}
+.body__page-home .header__logo .i-logo_dark,
+.body__page-time\/men .header__logo .i-logo_dark,
+.body__page-time\/women .header__logo .i-logo_dark {
+  display: none;
+}
+.body__page-home .header__logo .i-logo,
+.body__page-time\/men .header__logo .i-logo,
+.body__page-time\/women .header__logo .i-logo {
   display: inline-block;
 }
 .overlay-visible {

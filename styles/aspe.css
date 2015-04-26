@@ -939,7 +939,7 @@ header {
   text-transform: uppercase;
 }
 .contact__section-in .col > .sqs-block-markdown > .sqs-block-content p {
-  margin: 0;
+  margin: 0 0 30px;
   padding: 0;
   font-family: 'AtlasGroteskWeb-Bold', Helvetica, sans-serif;
   font-style: normal;

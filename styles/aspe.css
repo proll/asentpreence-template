@@ -870,6 +870,12 @@ header {
   font-size: 96px;
   line-height: 1;
 }
+.home__section-h:hover,
+.home__section-h:active,
+.home__section-h:focus {
+  color: #ffffff;
+  text-decoration: none;
+}
 .home__section-a {
   position: absolute;
   left: 0;
@@ -893,14 +899,12 @@ header {
   padding: 0;
   display: inline;
 }
-.home__section-a:hover span {
-  border-bottom: 1px solid #ffffff;
-}
-.home__section-a:hover,
-.home__section-a:active,
-.home__section-a:focus {
+.home__section-a:hover {
   color: #ffffff;
   text-decoration: none;
+}
+.home__section-a:hover span {
+  border-bottom: 1px solid #ffffff;
 }
 .body__page-contact .container {
   height: 100%;

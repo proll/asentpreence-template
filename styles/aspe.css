@@ -900,12 +900,6 @@ header {
 .home__section-a:hover span {
   border-bottom: 1px solid #ffffff;
 }
-.home__section:nth-child(odd) .home__section-h {
-  background-image: url(/assets/st/collection1.png);
-}
-.home__section:nth-child(even) .home__section-h {
-  background-image: url(/assets/st/collection2.png);
-}
 .body__page-contact .container {
   height: 100%;
   min-height: 100%;

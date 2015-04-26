@@ -3,8 +3,8 @@
     {.repeated section items}
       {.collection?}
         <section class="home__section home__section1" style="background-image:url({collection.mainImage.assetUrl}?format=1500w)">
-          <a href="{collection.fullUrl}" class="home__section-h"><h1>{collection.pageTitle}</h1></a>
-          <a href="{collection.fullUrl}" class="home__section-a"><span>View {collection.description}</span></a>
+          <a href="{collection.fullUrl}" class="home__section-h"><h1>{collection.title}</h1></a>
+          <a href="{collection.fullUrl}" class="home__section-a"><span>Discover {collection.description}</span></a>
         </section>
       {.end}
     {.end}

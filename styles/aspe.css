@@ -288,13 +288,16 @@ div:active {
 }
 body {
   margin: 0;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'AtlasGroteskWeb-Regular', Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
   font-size: 14px;
   line-height: 20px;
   color: #000000;
   background-color: #ffffff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  letter-spacing: 0.025em;
 }
 a {
   color: #48beea;
@@ -850,11 +853,10 @@ header {
 }
 .home__section-h {
   position: absolute;
-  width: 444px;
-  height: 134px;
+  width: 600px;
   top: 50%;
   left: 50%;
-  margin-left: -222px;
+  margin-left: -300px;
   margin-top: -63px;
   background-repeat: no-repeat;
   -webkit-background-size: 100% 100%;
@@ -863,9 +865,10 @@ header {
   background-size: 100% 100%;
 }
 .home__section-h h1 {
-  position: absolute;
-  top: -99997px;
-  left: -99997px;
+  margin: 0;
+  color: #ffffff;
+  font-size: 96px;
+  line-height: 1;
 }
 .home__section-a {
   position: absolute;

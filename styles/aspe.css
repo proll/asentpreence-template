@@ -651,7 +651,7 @@ header {
   font-size: 18px;
   line-height: 30px;
   margin: 0;
-  padding: 74px 40px 0;
+  padding: 35px 40px 0;
   -webkit-transition: color 0.3s;
   -moz-transition: color 0.3s;
   -o-transition: color 0.3s;
@@ -662,7 +662,7 @@ header {
 }
 .overlay__slide .overlay__desc {
   position: absolute;
-  bottom: 39px;
+  bottom: 15px;
   left: 40px;
   right: 40px;
 }
@@ -672,7 +672,7 @@ header {
   font-family: 'AtlasGroteskWeb-Regular', Helvetica, sans-serif;
   font-style: normal;
   font-weight: normal;
-  margin: 0 0 15px;
+  margin: 0;
 }
 .overlay__slide .overlay__desc-h p {
   display: inline;

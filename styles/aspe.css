@@ -1517,10 +1517,18 @@ header {
     padding: 0;
   }
   .home__section-h {
-    width: 222px;
-    height: 67px;
-    margin-left: -111px;
-    margin-top: -31.5px;
+    width: 300px;
+    margin-left: -150px;
+  }
+  .home__section-h h1 {
+    font-size: 48px;
+  }
+  .home__section-h h1 span {
+    -webkit-transform: translate(14px, -14px);
+    -moz-transform: translate(14px, -14px);
+    -ms-transform: translate(14px, -14px);
+    -o-transform: translate(14px, -14px);
+    transform: translate(14px, -14px);
   }
   .home__section-a {
     bottom: 33px;

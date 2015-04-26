@@ -1,70 +1,34 @@
 {
   "name": "i-2x",
-  "checksum": "3d37ba1dfc47c2fc2528b9a8fd7a1747",
-  "shortsum": "3d37b",
+  "checksum": "11f6eae6868b682cbd0ed0ae989540fd",
+  "shortsum": "11f6e",
   "images": [
     {
       "name": "al",
       "filename": "al.png",
-      "checksum": "a68dd4e1a4fb44a24cd5f3ececacdfec",
+      "checksum": "a481c987784ff18c364c87e185b810a7",
       "width": 104,
       "height": 196,
       "positionX": 0,
       "positionY": 0
     },
     {
-      "name": "al_w",
-      "filename": "al_w.png",
-      "checksum": "44c8f2cea40fd14342a5a41a22b0274c",
+      "name": "ar",
+      "filename": "ar.png",
+      "checksum": "9e72c8b0e8dfb50574da74dba59daa1e",
       "width": 104,
       "height": 196,
       "positionX": 0,
       "positionY": 198
     },
     {
-      "name": "ar",
-      "filename": "ar.png",
-      "checksum": "022223a2e16bfe1e5c645c99e80a8018",
-      "width": 104,
-      "height": 196,
-      "positionX": 0,
-      "positionY": 396
-    },
-    {
-      "name": "ar_w",
-      "filename": "ar_w.png",
-      "checksum": "df57370035b0a1fcbdc3ada1b0fa1959",
-      "width": 104,
-      "height": 196,
-      "positionX": 0,
-      "positionY": 594
-    },
-    {
       "name": "close",
       "filename": "close.png",
-      "checksum": "2d377b854944242d737019dddb010829",
+      "checksum": "cbcf990f4fb4e0ddd05b2ec911e56325",
       "width": 128,
       "height": 128,
       "positionX": 0,
-      "positionY": 792
-    },
-    {
-      "name": "close_w",
-      "filename": "close_w.png",
-      "checksum": "2972233b9a56352d35f6dcc09c4ae7a7",
-      "width": 128,
-      "height": 128,
-      "positionX": 0,
-      "positionY": 922
-    },
-    {
-      "name": "closew",
-      "filename": "closew.png",
-      "checksum": "f9d8f916252285bfe0a5b8da7507f866",
-      "width": 128,
-      "height": 128,
-      "positionX": 0,
-      "positionY": 1052
+      "positionY": 396
     },
     {
       "name": "code",
@@ -73,7 +37,7 @@
       "width": 126,
       "height": 96,
       "positionX": 0,
-      "positionY": 1182
+      "positionY": 526
     },
     {
       "name": "logo",
@@ -82,7 +46,7 @@
       "width": 505,
       "height": 112,
       "positionX": 0,
-      "positionY": 1280
+      "positionY": 624
     },
     {
       "name": "logo_dark",
@@ -91,7 +55,7 @@
       "width": 505,
       "height": 112,
       "positionX": 0,
-      "positionY": 1394
+      "positionY": 738
     },
     {
       "name": "menu",
@@ -100,7 +64,7 @@
       "width": 121,
       "height": 113,
       "positionX": 0,
-      "positionY": 1508
+      "positionY": 852
     },
     {
       "name": "menu_dark",
@@ -109,7 +73,7 @@
       "width": 121,
       "height": 113,
       "positionX": 0,
-      "positionY": 1623
+      "positionY": 967
     },
     {
       "name": "plus",
@@ -118,7 +82,7 @@
       "width": 96,
       "height": 96,
       "positionX": 0,
-      "positionY": 1738
+      "positionY": 1082
     }
   ]
 }

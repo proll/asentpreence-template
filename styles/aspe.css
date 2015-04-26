@@ -893,12 +893,12 @@ header {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 73px;
+  bottom: 72px;
   color: #ffffff;
 }
 .home__section-a span {
   font-size: 14px;
-  line-height: 22px;
+  line-height: 24px;
   display: inline-block;
   border-bottom: 1px solid transparent;
   -webkit-transition: border-color 0.2s;

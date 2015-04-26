@@ -522,7 +522,7 @@ header {
 }
 .header__menu {
   display: inline-block;
-  padding: 18px 20px 0;
+  padding: 17px 20px 0;
 }
 .header__menu .i-menu {
   display: none;
@@ -786,7 +786,7 @@ header {
   z-index: 9;
   left: -260px;
   border-right: 1px solid #ccc;
-  padding: 27px 40px;
+  padding: 40px;
 }
 .menu__list,
 .menu__group-list {
@@ -797,23 +797,14 @@ header {
 .menu__group {
   display: block;
   padding: 0;
-  margin: 0 0 48px;
+  margin: 0 0 24px;
   font-size: 14px;
-  line-height: 48px;
+  line-height: 24px;
 }
 .menu__item {
   display: block;
   padding: 0;
   margin: 0;
-}
-.menu__item h2 {
-  font-size: 14px;
-  line-height: 48px;
-  font-weight: bold;
-  padding: 0;
-  margin: 0;
-  text-transform: uppercase;
-  cursor: default;
 }
 .menu__item-a {
   color: #000000;
@@ -1623,6 +1614,6 @@ header {
   .menu {
     position: absolute;
     border-right: 1px solid #333;
-    padding: 7px 20px;
+    padding: 20px;
   }
 }

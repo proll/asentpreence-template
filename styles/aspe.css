@@ -1340,22 +1340,25 @@ header {
   }
   .overlay__close {
     padding: 0;
+    margin: -2px -2px 0 0;
   }
   .overlay__prev {
     padding: 0;
+    margin-left: -20px;
   }
   .overlay__next {
     padding: 0;
+    margin-right: -20px;
   }
   .overlay__slides-cont {
     padding: 0;
   }
   .overlay__slide h2 {
-    padding: 71px 2px 0;
+    padding: 15px 48px 0;
   }
   .overlay__slide .overlay__desc {
     position: absolute;
-    bottom: -3px;
+    bottom: -5px;
     left: 20px;
     right: 20px;
   }

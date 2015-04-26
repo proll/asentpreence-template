@@ -14,7 +14,7 @@
 
 <header>
   <a href="/" class="header__menu"><i class="i i-menu"></i><i class="i i-menu_dark"></i></a>
-  <a href="/" class="header__logo"><i class="i i-logo"></i></a>
+  <a href="/" class="header__logo"><i class="i i-logo"></i><i class="i i-logo_dark"></i></a>
 </header>
 
 <div class="container" id="aspe-container">

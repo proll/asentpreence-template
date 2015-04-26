@@ -1187,7 +1187,7 @@ header {
 }
 .about__cont p {
   text-indent: 40px;
-  margin: 24px 0 !important;
+  margin: 30px 0 !important;
 }
 .about__cont p:first-child {
   text-indent: 0;

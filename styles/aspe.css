@@ -869,6 +869,19 @@ header {
   color: #ffffff;
   font-size: 96px;
   line-height: 1;
+  position: relative;
+}
+.home__section-h h1 span {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  -webkit-transform: translate(-28px, -28px);
+  -moz-transform: translate(-28px, -28px);
+  -ms-transform: translate(-28px, -28px);
+  -o-transform: translate(-28px, -28px);
+  transform: translate(-28px, -28px);
 }
 .home__section-h:hover,
 .home__section-h:active,

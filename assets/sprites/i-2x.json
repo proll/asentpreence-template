@@ -1,7 +1,7 @@
 {
   "name": "i-2x",
-  "checksum": "5d77817540623051e3f1e08cf75c1548",
-  "shortsum": "5d778",
+  "checksum": "3d37ba1dfc47c2fc2528b9a8fd7a1747",
+  "shortsum": "3d37b",
   "images": [
     {
       "name": "al",
@@ -114,7 +114,7 @@
     {
       "name": "plus",
       "filename": "plus.png",
-      "checksum": "8dd2c064300907e7551dad7169270805",
+      "checksum": "70d18f670d3280e05d6c5bf45b20ab6e",
       "width": 96,
       "height": 96,
       "positionX": 0,

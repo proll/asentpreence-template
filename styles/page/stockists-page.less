@@ -22,41 +22,44 @@
 
 			h2 {
 				font-size: 18px;
-				line-height: 2;
+				line-height: 30px;
 				text-transform: uppercase;
 				font-weight: normal;
-				margin: 0 0 1em;
+				margin: 0 0 30px;
+				.font_bold;
 			}
 
 			h3 {
 				font-size: 14px;
 				line-height: 24px;
 				font-weight: normal;
-				margin: 0 0 10px;
+				margin: 0 0 0;
 			}
 			address {
 				font-style: normal;
-				font-size: 11px;
-				line-height: 14px;
+				font-size: 14px;
+				line-height: 24px;
 				padding: 0;
-				margin: 0 0 28px;
+				margin: 0 0 0;
 			}
 
 			a {
 				font-style: normal;
-				font-size: 11px;
-				line-height: 14px;
+				font-size: 14px;
+				line-height: 24px;
 				text-decoration: none;
 				color: @textColor;
-				border-bottom: 1px solid @textColor;
+				border-bottom: 1px solid transparent;
+				.transition(border-color .2s);
 
 				&:hover {
 					text-decoration: none;
 					color: @textColor;
+					border-bottom-color: @textColor;
 				}	
 			}
 		}
 
 			.stockists__itm {
-				margin-bottom: 45px !important;
+				margin-bottom: 60px !important;
 			}

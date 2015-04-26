@@ -420,13 +420,13 @@ BODY {
   overflow: auto;
 }
 .i {
-  background: url("/assets/sprites/i-5d778.png") no-repeat 0 0;
+  background: url("/assets/sprites/i-3d37b.png") no-repeat 0 0;
   vertical-align: text-top;
   display: inline-block;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5) {
   .i {
-    background: url("/assets/sprites/i-2x-5d778.png") no-repeat 0 0;
+    background: url("/assets/sprites/i-2x-3d37b.png") no-repeat 0 0;
     -webkit-background-size: 253px 917px;
     -moz-background-size: 253px 917px;
     -o-background-size: 253px 917px;
@@ -1064,38 +1064,45 @@ header {
 }
 .stockists__col h2 {
   font-size: 18px;
-  line-height: 2;
+  line-height: 30px;
   text-transform: uppercase;
+  margin: 0 0 30px;
+  font-family: 'AtlasGroteskWeb-Bold', Helvetica, sans-serif;
+  font-style: normal;
   font-weight: normal;
-  margin: 0 0 1em;
 }
 .stockists__col h3 {
   font-size: 14px;
   line-height: 24px;
   font-weight: normal;
-  margin: 0 0 10px;
+  margin: 0 0 0;
 }
 .stockists__col address {
   font-style: normal;
-  font-size: 11px;
-  line-height: 14px;
+  font-size: 14px;
+  line-height: 24px;
   padding: 0;
-  margin: 0 0 28px;
+  margin: 0 0 0;
 }
 .stockists__col a {
   font-style: normal;
-  font-size: 11px;
-  line-height: 14px;
+  font-size: 14px;
+  line-height: 24px;
   text-decoration: none;
   color: #000000;
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid transparent;
+  -webkit-transition: border-color 0.2s;
+  -moz-transition: border-color 0.2s;
+  -o-transition: border-color 0.2s;
+  transition: border-color 0.2s;
 }
 .stockists__col a:hover {
   text-decoration: none;
   color: #000000;
+  border-bottom-color: #000000;
 }
 .stockists__itm {
-  margin-bottom: 45px !important;
+  margin-bottom: 60px !important;
 }
 .body__page-galleryadmin .container {
   height: 100%;
@@ -1335,24 +1342,6 @@ header {
     padding: 33px 20px 40px;
     width: auto;
     height: auto;
-  }
-  .body__page-contact .form-block {
-    margin: 36px -20px;
-  }
-  .body__page-contact .form-block .form-item .field-element {
-    width: 171px;
-  }
-  .body__page-contact .form-block .form-button-wrapper {
-    display: inline-block;
-    vertical-align: middle;
-  }
-  .body__page-contact .form-block .form-button-wrapper .button {
-    width: auto;
-    margin-left: 20px;
-    padding: 0;
-  }
-  .body__page-contact .contact__form {
-    margin: 36px -20px;
   }
   .body__page-contact .contact__section-in {
     display: block;

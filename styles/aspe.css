@@ -893,12 +893,14 @@ header {
   padding: 0;
   display: inline;
 }
-.home__section-a:hover {
-  color: #ffffff;
-  text-decoration: none;
-}
 .home__section-a:hover span {
   border-bottom: 1px solid #ffffff;
+}
+.home__section-a:hover,
+.home__section-a:active,
+.home__section-a:focus {
+  color: #ffffff;
+  text-decoration: none;
 }
 .body__page-contact .container {
   height: 100%;

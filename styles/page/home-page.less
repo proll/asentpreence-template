@@ -58,10 +58,14 @@
 		}
 
 		&:hover {
-			color: @white;
-			text-decoration: none;
 			span {
 				border-bottom: 1px solid @white;
 			}
+		}
+		&:hover,
+		&:active,
+		&:focus {
+			color: @white;
+			text-decoration: none;
 		}
 	}

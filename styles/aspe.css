@@ -1351,13 +1351,11 @@ header {
     padding: 0;
   }
   .overlay__slide h2 {
-    font-size: 14px;
-    line-height: 2;
     padding: 71px 2px 0;
   }
   .overlay__slide .overlay__desc {
     position: absolute;
-    bottom: 34px;
+    bottom: -3px;
     left: 20px;
     right: 20px;
   }

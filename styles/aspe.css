@@ -884,7 +884,7 @@ header {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 28px;
+  bottom: 33px;
   color: #ffffff;
 }
 .home__section-a span {
@@ -1177,9 +1177,12 @@ header {
   vertical-align: middle;
 }
 .about__cont {
+  font-family: 'AtlasGroteskWeb-Bold', Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
   margin: 0 20%;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 18px;
+  line-height: 30px;
   text-align: justify;
 }
 .about__cont p {

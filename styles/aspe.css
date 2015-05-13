@@ -1249,17 +1249,31 @@ header {
 }
 .misc__cont {
   margin: 0 20%;
+  font-size: 14px;
+  line-height: 24px;
+  min-height: 320px;
+  letter-spacing: .025em;
+  font-family: 'AtlasGroteskWeb-Regular', Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+.misc__cont h1 {
   font-size: 18px;
   line-height: 30px;
-  text-align: justify;
-  min-height: 320px;
+  font-family: 'AtlasGroteskWeb-Bold', Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.misc__cont h2 {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
 }
 .misc__cont p {
-  text-indent: 40px;
-  margin: 30px 0 !important;
-}
-.misc__cont p:first-child {
-  text-indent: 0;
+  margin: 0 0 24px !important;
 }
 .error-page__list,
 .error-page__description {

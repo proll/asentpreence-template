@@ -1269,7 +1269,8 @@ header {
 .misc__cont h2 {
   font-size: 14px;
   line-height: 24px;
-  margin-bottom: 30px;
+  margin-top: 30px;
+  margin-bottom: 0;
   text-transform: uppercase;
 }
 .misc__cont p {

@@ -1269,6 +1269,9 @@ header {
 .misc__cont h2 {
   font-size: 14px;
   line-height: 24px;
+  font-family: 'AtlasGroteskWeb-Regular', Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
   margin-top: 1em;
   margin-bottom: 0;
   text-transform: uppercase;

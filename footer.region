@@ -2,7 +2,10 @@
   
 {squarespace-footers}
 
+<div class="menu">
 <squarespace:navigation navigationId="mainNav" template="navigation" />
+<squarespace:navigation navigationId="miscNav" template="navigation" />
+</div>
 <squarespace:script src="vendor/lodash.js" combo="true" />
 <squarespace:script src="vendor/jquery/swipe.js" combo="true" />
 <squarespace:script src="app.js" combo="true" />

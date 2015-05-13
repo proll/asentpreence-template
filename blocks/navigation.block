@@ -1,49 +1,47 @@
-<div class="menu">
-  <ul class="menu__list">
-    <li class="menu__group">
-      <ul class="menu__group-list">
-        {.repeated section items}
+<ul class="menu__list">
+  <li class="menu__group">
+    <ul class="menu__group-list">
+      {.repeated section items}
 
-          {.folder?}
-            {.repeated section items}
-              {.collection?}
-                <li class="menu__item">
-                  <a href="{collection.fullUrl}" class="menu__item-a">{collection.navigationTitle}</a>
-                </li>
-              {.end}
+        {.folder?}
+          {.repeated section items}
+            {.collection?}
+              <li class="menu__item">
+                <a href="{collection.fullUrl}" class="menu__item-a">{collection.navigationTitle}</a>
+              </li>
+            {.end}
 
-              {.section externalLink}
-                <li class="menu__item">
-                  <a href="{url}" class="menu__item-a"{.section newWindow} target="_blank"{.end}>{title}</a>
-                </li>
-              {.end}
+            {.section externalLink}
+              <li class="menu__item">
+                <a href="{url}" class="menu__item-a"{.section newWindow} target="_blank"{.end}>{title}</a>
+              </li>
             {.end}
           {.end}
         {.end}
-      </ul>
-    </li>
-    <li class="menu__group">
-      <ul class="menu__group-list">
-        {.repeated section items}
-          {.folder?}
-          {.or}
-            <li class="menu__item">
+      {.end}
+    </ul>
+  </li>
+  <li class="menu__group">
+    <ul class="menu__group-list">
+      {.repeated section items}
+        {.folder?}
+        {.or}
+          <li class="menu__item">
 
-              {.section collection}
-                <a href="{fullUrl}" class="menu__item-a">{navigationTitle}</a>
-              {.end}
+            {.section collection}
+              <a href="{fullUrl}" class="menu__item-a">{navigationTitle}</a>
+            {.end}
 
-              {.section externalLink}
-                <a href="{url}" class="menu__item-a"{.section newWindow} target="_blank"{.end}>{title}</a>
-              {.end}
+            {.section externalLink}
+              <a href="{url}" class="menu__item-a"{.section newWindow} target="_blank"{.end}>{title}</a>
+            {.end}
 
-            </li>
-          {.end}
+          </li>
         {.end}
-      </ul>
-    </li>
-  </ul>
-</div>
+      {.end}
+    </ul>
+  </li>
+</ul>
 
 
 

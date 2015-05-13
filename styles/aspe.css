@@ -1252,6 +1252,7 @@ header {
   font-size: 18px;
   line-height: 30px;
   text-align: justify;
+  min-height: 320px;
 }
 .misc__cont p {
   text-indent: 40px;

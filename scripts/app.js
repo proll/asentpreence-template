@@ -1,5 +1,6 @@
 $(function() {
-	var $body = $('body'),
+	var $html = $('html'),
+		$body = $('body'),
 		$window = $(window);
 
 	// Main .menu
@@ -7,7 +8,7 @@ $(function() {
 			if(e && e.preventDefault) {
 				e.preventDefault();
 			}
-			$body.toggleClass('menu-visible');
+			$html.toggleClass('menu-visible');
 			return false;
 		}
 	);

@@ -700,6 +700,9 @@ header {
 .menu-visible {
   overflow: hidden;
 }
+.menu-visible body {
+  overflow: hidden;
+}
 .menu-visible .menu {
   -webkit-transform: translate(0, 0);
   -moz-transform: translate(0, 0);

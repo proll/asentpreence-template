@@ -1253,6 +1253,7 @@ header {
   line-height: 24px;
   min-height: 320px;
   letter-spacing: .025em;
+  padding-top: 150px;
   font-family: 'AtlasGroteskWeb-Regular', Helvetica, sans-serif;
   font-style: normal;
   font-weight: normal;

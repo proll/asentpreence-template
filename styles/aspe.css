@@ -1264,7 +1264,7 @@ header {
   font-style: normal;
   font-weight: normal;
   text-align: center;
-  margin-bottom: 1em;
+  margin-bottom: 30px;
 }
 .misc__cont h2 {
   font-size: 14px;
@@ -1272,12 +1272,12 @@ header {
   font-family: 'AtlasGroteskWeb-Regular', Helvetica, sans-serif;
   font-style: normal;
   font-weight: normal;
-  margin-top: 1em;
+  margin-top: 24px;
   margin-bottom: 0;
   text-transform: uppercase;
 }
 .misc__cont p {
-  margin: 0 0 1em !important;
+  margin: 0 0 24px !important;
 }
 .error-page__list,
 .error-page__description {

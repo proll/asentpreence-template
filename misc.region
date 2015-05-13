@@ -1,0 +1,7 @@
+<section class="misc__section">
+  <div class="misc__section-in">
+    <div class="misc__cont">
+      {squarespace.main-content}
+    </div>
+  </div>
+</section>

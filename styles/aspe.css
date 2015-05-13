@@ -1225,6 +1225,41 @@ header {
   border-bottom: 12px solid transparent;
   margin-top: -12px;
 }
+.body__page-misc .sqs-layout > .sqs-row {
+  margin: 0;
+}
+.body__page-misc .sqs-block {
+  padding: 0 !important;
+}
+.body__page-misc .container {
+  height: 100%;
+  min-height: 100%;
+}
+.misc__section {
+  display: table;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+.misc__section-in {
+  display: table-cell;
+  vertical-align: middle;
+}
+.misc__cont {
+  margin: 0 20%;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: justify;
+}
+.misc__cont p {
+  text-indent: 40px;
+  margin: 30px 0 !important;
+}
+.misc__cont p:first-child {
+  text-indent: 0;
+}
 .error-page__list,
 .error-page__description {
   margin-top: 40px;
@@ -1266,6 +1301,9 @@ header {
   }
   .stockists__itm {
     margin-bottom: 45px;
+  }
+  .misc__cont {
+    margin: 0 146px;
   }
 }
 @media (max-width: 640px) {
@@ -1369,5 +1407,17 @@ header {
     position: absolute;
     border-right: 1px solid #333;
     padding: 20px;
+  }
+  .about__section {
+    display: block;
+    width: auto;
+    height: auto;
+  }
+  .about__section-in {
+    display: block;
+  }
+  .about__cont {
+    margin: 0;
+    padding: 49px 20px 20px;
   }
 }

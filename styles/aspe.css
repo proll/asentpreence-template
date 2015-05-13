@@ -697,9 +697,6 @@ header {
   font-weight: normal;
   text-transform: uppercase;
 }
-.menu-visible {
-  overflow: hidden;
-}
 .menu-visible body {
   overflow: hidden;
 }

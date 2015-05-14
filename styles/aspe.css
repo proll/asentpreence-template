@@ -1302,6 +1302,8 @@ header {
   font-family: 'AtlasGroteskWeb-Regular', Helvetica, sans-serif;
   font-style: normal;
   font-weight: normal;
+  border-collapse: separate;
+  border-spacing: 0;
 }
 .misc__cont th,
 .misc__cont td {
@@ -1309,6 +1311,7 @@ header {
   font-style: normal;
   font-weight: normal;
   border-bottom: 1px solid #000000;
+  text-align: left;
 }
 .error-page__list,
 .error-page__description {

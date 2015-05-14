@@ -54,4 +54,34 @@
 		p {
 			margin: 0 0 24px !important;
 		}
+
+		a {
+			&:hover,
+			&:active,
+			&:focus {
+				.font_normal;
+			 	color: @textColor;
+			 	text-transform: none;
+			 	text-decoration: none;
+				color: @textColor;
+				display: inline-block;
+				line-height: 1.2;
+			}
+			&:hover {
+				border-bottom: 1px solid @textColor;
+			}
+		}
+
+		table {
+			width: 100%;
+			font-size: 12px;
+			line-height: 2;
+			.font_normal;
+		}
+
+			th,
+			td {
+				.font_normal;
+				border-bottom: 1px solid @black;
+			}
 	}

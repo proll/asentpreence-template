@@ -1280,6 +1280,36 @@ header {
 .misc__cont p {
   margin: 0 0 24px !important;
 }
+.misc__cont a:hover,
+.misc__cont a:active,
+.misc__cont a:focus {
+  font-family: 'AtlasGroteskWeb-Regular', Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: none;
+  text-decoration: none;
+  color: #000000;
+  display: inline-block;
+  line-height: 1.2;
+}
+.misc__cont a:hover {
+  border-bottom: 1px solid #000000;
+}
+.misc__cont table {
+  width: 100%;
+  font-size: 12px;
+  line-height: 2;
+  font-family: 'AtlasGroteskWeb-Regular', Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+.misc__cont th,
+.misc__cont td {
+  font-family: 'AtlasGroteskWeb-Regular', Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  border-bottom: 1px solid #000000;
+}
 .error-page__list,
 .error-page__description {
   margin-top: 40px;
@@ -1439,5 +1469,8 @@ header {
   .misc__cont {
     margin: 0;
     padding: 75px 20px;
+  }
+  .misc__cont .thdn {
+    display: none;
   }
 }

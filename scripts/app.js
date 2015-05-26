@@ -237,8 +237,15 @@ $(function() {
 
 	_.forEach($('.collection__grid-itm'), function(item) {
 		var $item = $(item);
-		if(!!$item.data('href')) {
-			(new ItemMark()).init($item);
+		if(!$item.is(':last-child')) {
+			if(!!$item.data('href')) {
+				(new ItemMark()).init($item);
+			}
+		// fix на последнюю ссылку
+		} else {
+			$item.on('click', function(e) {
+				window.location.href = $item.data('href');
+			})
 		}
 	})
 

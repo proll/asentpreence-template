@@ -1280,6 +1280,9 @@ header {
 .misc__cont p {
   margin: 0 0 24px !important;
 }
+.misc__cont a {
+  color: #000000;
+}
 .misc__cont a:hover,
 .misc__cont a:active,
 .misc__cont a:focus {

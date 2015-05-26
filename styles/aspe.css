@@ -1473,6 +1473,21 @@ header {
     display: block;
     width: auto;
   }
+  .collection__grid-itm:last-child {
+    height: 100px;
+  }
+  .collection__grid-itm:last-child .collection__grid-h {
+    font-size: 24px;
+    margin-left: -128.5px;
+    margin-top: -20.5px;
+  }
+  .collection__grid-itm:last-child .collection__grid-h span {
+    -webkit-transform: translate(7px, -7px);
+    -moz-transform: translate(7px, -7px);
+    -ms-transform: translate(7px, -7px);
+    -o-transform: translate(7px, -7px);
+    transform: translate(7px, -7px);
+  }
   .stockists__row {
     padding-top: 69px;
   }

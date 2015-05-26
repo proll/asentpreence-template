@@ -873,6 +873,9 @@ header {
 }
 .home__section0 .home__section-h h1 {
   font-size: 48px;
+  font-family: 'AtlasGroteskWeb-Regular', Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
   color: #000000;
 }
 .body__page-contact .container {

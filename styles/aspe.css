@@ -905,6 +905,9 @@ header {
   font-style: normal;
   font-weight: normal;
 }
+.contact__section-in .col .sqs-block-content p span {
+  text-transform: uppercase;
+}
 .contact__section-in .col .sqs-block-content a,
 .contact__section-in .col .sqs-block-content a:hover {
   font-family: 'AtlasGroteskWeb-Regular', Helvetica, sans-serif;

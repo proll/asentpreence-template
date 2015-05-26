@@ -514,22 +514,18 @@ header {
 .header__logo .i-logo {
   display: none;
 }
-.body__page-home .header__menu .i-menu_dark,
 .body__page-time\/men .header__menu .i-menu_dark,
 .body__page-time\/women .header__menu .i-menu_dark {
   display: none;
 }
-.body__page-home .header__menu .i-menu,
 .body__page-time\/men .header__menu .i-menu,
 .body__page-time\/women .header__menu .i-menu {
   display: inline-block;
 }
-.body__page-home .header__logo .i-logo_dark,
 .body__page-time\/men .header__logo .i-logo_dark,
 .body__page-time\/women .header__logo .i-logo_dark {
   display: none;
 }
-.body__page-home .header__logo .i-logo,
 .body__page-time\/men .header__logo .i-logo,
 .body__page-time\/women .header__logo .i-logo {
   display: inline-block;
@@ -871,6 +867,12 @@ header {
 }
 .home__section-a:hover span {
   border-bottom: 1px solid #ffffff;
+}
+.home__section0 {
+  background: #ffffff;
+}
+.home__section0 .home__section-h h1 {
+  color: #000000;
 }
 .body__page-contact .container {
   height: 100%;

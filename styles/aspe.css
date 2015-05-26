@@ -748,7 +748,7 @@ header {
 }
 .menu__list:last-child {
   position: absolute;
-  bottom: 0;
+  bottom: 14px;
 }
 .menu__list,
 .menu__group-list {
@@ -979,8 +979,6 @@ header {
 .collection__grid-itm {
   display: inline-block;
   vertical-align: top;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
   width: 50%;
   min-width: 320px;
   position: relative;
@@ -992,6 +990,9 @@ header {
 .collection__grid-itm-img {
   width: 100%;
   height: auto;
+}
+.collection__grid-h {
+  display: none;
 }
 .collection__item-mark {
   position: absolute;
@@ -1006,6 +1007,54 @@ header {
   display: block;
   margin-top: -24px;
   margin-left: -24px;
+}
+.collection__grid-itm {
+  cursor: pointer;
+}
+.collection__grid-itm:last-child {
+  display: block;
+  width: auto;
+  height: 200px;
+  overflow: hidden;
+}
+.collection__grid-itm:last-child .collection__grid-itm-body {
+  display: none;
+}
+.collection__grid-itm:last-child .collection__grid-itm-img {
+  position: absolute;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+.collection__grid-itm:last-child .collection__grid-h {
+  font-family: 'AtlasGroteskWeb-Regular', Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
+  display: block;
+  margin: 0;
+  color: #ffffff;
+  font-size: 48px;
+  line-height: 2;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -250px;
+  margin-top: -48px;
+}
+.collection__grid-itm:last-child .collection__grid-h span {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  -webkit-transform: translate(14px, -14px);
+  -moz-transform: translate(14px, -14px);
+  -ms-transform: translate(14px, -14px);
+  -o-transform: translate(14px, -14px);
+  transform: translate(14px, -14px);
 }
 .stockists__row {
   text-align: center;

@@ -746,16 +746,15 @@ header {
   border-right: 1px solid #ccc;
   padding: 40px;
 }
+.menu__list:last-child {
+  position: absolute;
+  bottom: 0;
+}
 .menu__list,
 .menu__group-list {
   display: block;
   margin: 0;
   padding: 0;
-}
-.menu__list:last-child,
-.menu__group-list:last-child {
-  position: absolute;
-  bottom: 0;
 }
 .menu__group {
   display: block;

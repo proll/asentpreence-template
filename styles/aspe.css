@@ -1022,11 +1022,13 @@ header {
 }
 .collection__grid-itm:last-child .collection__grid-itm-img {
   position: absolute;
-  -webkit-transform: translate(0, -50%);
-  -moz-transform: translate(0, -50%);
-  -ms-transform: translate(0, -50%);
-  -o-transform: translate(0, -50%);
-  transform: translate(0, -50%);
+  left: 0;
+  top: 0;
+  -webkit-transform: translate(0, -38%);
+  -moz-transform: translate(0, -38%);
+  -ms-transform: translate(0, -38%);
+  -o-transform: translate(0, -38%);
+  transform: translate(0, -38%);
 }
 .collection__grid-itm:last-child .collection__grid-h {
   font-family: 'AtlasGroteskWeb-Regular', Helvetica, sans-serif;

@@ -534,6 +534,12 @@ header {
 .body__page-time\/women .header__logo .i-logo {
   display: inline-block;
 }
+.i-logo {
+  background: url(/assets/st/logo.svg);
+}
+.i-logo_dark {
+  background: url(/assets/st/logo_dark.svg);
+}
 .overlay-visible {
   overflow: hidden;
 }

@@ -752,6 +752,11 @@ header {
   margin: 0;
   padding: 0;
 }
+.menu__list:last-child,
+.menu__group-list:last-child {
+  position: absolute;
+  bottom: 0;
+}
 .menu__group {
   display: block;
   padding: 0;
@@ -893,18 +898,15 @@ header {
   display: table-cell;
   vertical-align: middle;
 }
-.contact__section-in .col > .sqs-block-markdown:first-child {
-  text-transform: uppercase;
-}
-.contact__section-in .col > .sqs-block-markdown > .sqs-block-content p {
+.contact__section-in .col .sqs-block-content p {
   margin: 0 0 30px;
   padding: 0;
   font-family: 'AtlasGroteskWeb-Bold', Helvetica, sans-serif;
   font-style: normal;
   font-weight: normal;
 }
-.contact__section-in .col > .sqs-block-markdown > .sqs-block-content a,
-.contact__section-in .col > .sqs-block-markdown > .sqs-block-content a:hover {
+.contact__section-in .col .sqs-block-content a,
+.contact__section-in .col .sqs-block-content a:hover {
   font-family: 'AtlasGroteskWeb-Regular', Helvetica, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -1399,7 +1401,7 @@ header {
   .body__page-contact .contact__section-in {
     display: block;
   }
-  .body__page-contact .contact__section-in .col > .sqs-block-markdown > .sqs-block-content p {
+  .body__page-contact .contact__section-in .col .sqs-block-content p {
     margin-top: 2em;
   }
   .about__section {

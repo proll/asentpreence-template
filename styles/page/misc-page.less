@@ -82,6 +82,7 @@
 			.font_normal;
 			border-collapse: separate;
 			border-spacing: 0;
+			table-layout: fixed;
 		}
 
 			th,
@@ -90,5 +91,8 @@
 				border-bottom: 1px solid @black;
 				text-align: left;
 				padding: 0;
+				&:last-child {
+					text-align: right;
+				}
 			}
 	}

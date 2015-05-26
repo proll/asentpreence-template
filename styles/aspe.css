@@ -1389,6 +1389,7 @@ header {
   font-weight: normal;
   border-collapse: separate;
   border-spacing: 0;
+  table-layout: fixed;
 }
 .misc__cont th,
 .misc__cont td {
@@ -1398,6 +1399,10 @@ header {
   border-bottom: 1px solid #000000;
   text-align: left;
   padding: 0;
+}
+.misc__cont th:last-child,
+.misc__cont td:last-child {
+  text-align: right;
 }
 .error-page__list,
 .error-page__description {

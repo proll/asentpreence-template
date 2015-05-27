@@ -1390,16 +1390,13 @@ header {
   width: 100%;
   font-size: 12px;
   line-height: 2;
-  font-family: 'AtlasTypewriterWeb-Regular', Arial, sans-serif;
-  font-style: normal;
-  font-weight: normal;
   border-collapse: separate;
   border-spacing: 0;
   table-layout: fixed;
 }
 .misc__cont th,
 .misc__cont td {
-  font-family: 'AtlasGroteskWeb-Regular', Helvetica, sans-serif;
+  font-family: 'AtlasTypewriterWeb-Regular', Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   border-bottom: 1px solid #000000;
